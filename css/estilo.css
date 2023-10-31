@@ -335,7 +335,7 @@ body{
     padding: 10px;
     text-align: justify;
     text-justify: auto;
-    font-size: large;
+    font-size: 2vh;
 }  
   .carousel { 
     grid-area: carousel;
@@ -500,6 +500,15 @@ footer{
           "hr"
           "footer2";
       }
+      .car1{
+        padding: 0px;
+      }
+      .car2{
+        padding: 0px;
+      }
+      .car3{
+        padding: 0px;
+      }
     .img{
         width: 450px;
     }
@@ -522,7 +531,7 @@ footer{
     }
     .parrafo1{
       width: 100%;
-      font-size: medium;
+      font-size: 2vh;
     }
     .logo{
       width: 70px;
@@ -666,7 +675,7 @@ footer{
 }
 .parrafo1{
   width: 100%;
-  font-size: medium;
+  font-size: 2vh;
 }
 .anuncio1{
   padding: 10px;
@@ -689,4 +698,99 @@ footer{
 .logo{
   width: 60px;
 }
+}
+@media screen and (max-width:320px){
+  .container1 { 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "carousel" 
+      "article"
+      "footer";
+  }
+  .container2 { 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto auto auto auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "hr2"
+      "texto1"
+      "imagen1"
+      "hr3"
+      "texto2"
+      "imagen2"
+      "hr"
+      "footer2";
+  }
+  .container3 {  
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr auto auto auto 0.5fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "hr2"
+      "formulario"
+      "hr"
+      "footer3";
+  }
+  .container4 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "hr"
+      "anuncio1"
+      "car1"
+      "hr2"
+      "anuncio2"
+      "car2"
+      "hr3"
+      "anuncio3" 
+      "car3"
+      "hr4"
+      "footer2";
+  }
+  .container5 {  
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto auto;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "hr2"
+      "formulario2"
+      "hr"
+      "footer2";
+  }
+  .container6 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "hr2"
+      "pregunta1" 
+      "foto1"
+      "hr3"
+      "pregunta2"
+      "foto2" 
+      "hr4"
+      "pregunta3" 
+      "foto3"
+      "hr"
+      "footer2";
+  }
 }
