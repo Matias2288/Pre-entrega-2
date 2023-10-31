@@ -337,11 +337,6 @@ body{
     text-justify: auto;
     font-size: large;
 }  
-.parrafo2{
-  padding: 20px;
-  margin-left: 10px;
-  font-size: large;
-}
   .carousel { 
     grid-area: carousel;
     padding: 5px;
@@ -529,11 +524,32 @@ footer{
       width: 100%;
       font-size: medium;
     }
-    .parrafo2{
-      font-size: medium;
-    }
     .logo{
       width: 70px;
+  }
+  .texto1{
+    padding: 10px;
+  }
+  .texto2{
+    padding: 10px;
+  }
+  .anuncio1{
+    padding: 10px;
+  }
+  .anuncio2{
+    padding: 10px;
+  }
+  .anuncio3{
+    padding: 10px;
+  }
+  .pregunta1{
+    padding: 10px;
+  }
+  .pregunta2{
+    padding: 10px;
+  }
+  .pregunta3{
+    padding: 10px;
   }
 }
 @media screen and (max-width:576px){
@@ -650,20 +666,27 @@ footer{
 }
 .parrafo1{
   width: 100%;
+  font-size: medium;
 }
 .anuncio1{
-  padding: 0px;
+  padding: 10px;
 }
 .anuncio2{
-  padding: 0px;
+  padding: 10px;
 }
 .anuncio3{
-  padding: 0px;
+  padding: 10px;
+}
+.pregunta1{
+  padding: 10px;
+}
+.pregunta2{
+  padding: 10px;
+}
+.pregunta3{
+  padding: 10px;
 }
 .logo{
   width: 60px;
-}
-.parrafo2{
-  font-size: small;
 }
 }
