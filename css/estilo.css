@@ -587,7 +587,7 @@ footer{
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "header header"
+      "header"
       "hr2"
       "formulario"
       "hr"
