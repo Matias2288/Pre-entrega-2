@@ -560,6 +560,9 @@ footer{
   .pregunta3{
     padding: 10px;
   }
+  .carousel {  
+    width: 550px;
+}
 }
 @media screen and (max-width:576px){
   .container1 { 
@@ -698,6 +701,9 @@ footer{
 .logo{
   width: 60px;
 }
+.carousel {  
+  width: 370px;
+}
 }
 @media screen and (max-width:320px){
   .container1 { 
@@ -792,5 +798,8 @@ footer{
       "foto3"
       "hr"
       "footer2";
+  }
+  .carousel {  
+    width: 300px;
   }
 }
