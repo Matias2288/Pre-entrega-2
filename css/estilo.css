@@ -396,7 +396,7 @@ footer{
     opacity: 1;
 }
 .tiktok{
-    inline-size: 90px;
+    inline-size: 88px;
     opacity: 0.6;
 }
 .tiktok:hover{
@@ -445,7 +445,7 @@ footer{
       }
       .container4 {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr auto auto auto auto auto auto auto auto auto auto 0.5fr;
+        grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
         grid-auto-columns: 1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
@@ -478,7 +478,7 @@ footer{
       }
       .container6 {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr auto auto auto auto auto auto auto auto auto auto 0.5fr;
+        grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
         grid-auto-columns: 1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
@@ -516,4 +516,117 @@ footer{
     .subtitulo{
         font-size: 20px;
     }
+}
+@media screen and (max-width:576px){
+  .container1 { 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "carousel" 
+      "article"
+      "footer";
+  }
+  .container2 { 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto auto auto auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "hr2"
+      "texto1"
+      "imagen1"
+      "hr3"
+      "texto2"
+      "imagen2"
+      "hr"
+      "footer2";
+  }
+  .container3 {  
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto auto;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "hr2"
+      "formulario"
+      "hr"
+      "footer2";
+  }
+  .container4 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "hr"
+      "anuncio1"
+      "car1"
+      "hr2"
+      "anuncio2"
+      "car2"
+      "hr3"
+      "anuncio3" 
+      "car3"
+      "hr4"
+      "footer2";
+  }
+  .container5 {  
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto auto;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "hr2"
+      "formulario2"
+      "hr"
+      "footer2";
+  }
+  .container6 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "hr2"
+      "pregunta1" 
+      "foto1"
+      "hr3"
+      "pregunta2"
+      "foto2" 
+      "hr4"
+      "pregunta3" 
+      "foto3"
+      "hr"
+      "footer2";
+  }
+  .img{
+    width: 350px;
+  }
+  .pregunta-img{
+    width: 300px;
+  }
+  .pregunta-img2{
+    width: 300px;
+  }
+  .instagram{
+    inline-size: 70px;
+}
+.facebook{
+  inline-size: 60px;
+}
+.tiktok{
+  inline-size: 68px;
+}
 }
