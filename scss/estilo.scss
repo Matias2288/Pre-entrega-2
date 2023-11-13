@@ -9,6 +9,7 @@ body{
     margin: auto;
     background-repeat:round;
 }
+//Pagina de inicio
 .container1{
     margin: 0 auto;
     width: 90%;
@@ -129,6 +130,7 @@ h2{
     font-weight: normal;
     font-family: 'Rosarivo', serif;
 }
+//Sobre Nosotros
 .container2 { 
     margin: 0 auto;
     width: 90%;
@@ -220,6 +222,7 @@ h2{
         text-align: center;
         font-family: 'Bungee Spice', cursive;
     }
+    //Contacto
     .container3 {  
         margin: 0 auto;
         width: 90%;
@@ -280,6 +283,7 @@ h2{
             margin: 0;
           }
       }
+      //Productos
       .container4 {
         margin: 0 auto;
         width: 90%;
@@ -401,6 +405,7 @@ h2{
             margin: 0;
         }
       }
+      //Pagina de compra
       .container5 {  
         margin: 0 auto;
         width: 90%;
@@ -452,6 +457,7 @@ h2{
             margin: 0;
         }
       }
+      //Preguntas Frecuentes
       .container6 {
         margin: 0 auto;
         width: 90%;  
@@ -563,6 +569,7 @@ h2{
         
       }
       @media screen and (min-width:768px) and (max-width:1600px){
+        //Pagina de inicio
         .container1 { 
             grid-template-columns: 1fr;
             grid-template-rows: 1fr auto auto auto;
@@ -599,6 +606,7 @@ h2{
           width: 95%;
           font-size: 1.8vh;
         }
+        //Sobre Nosotros
           .container2 { 
             grid-template-columns: 1fr;
             grid-template-rows: 1fr auto auto auto auto auto auto auto auto;
@@ -636,6 +644,7 @@ h2{
                 }
             }
           }
+          //Contacto
           .container3 {  
             grid-template-columns: 1fr;
             grid-template-rows: 0.5fr auto auto auto 0.5fr;
@@ -662,6 +671,7 @@ h2{
                 } 
            } 
           }
+          //Productos
           .container4 {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
@@ -707,6 +717,7 @@ h2{
             }
           }
           }
+          //Pagina de compra
           .container5 {  
             grid-template-columns: 1fr;
             grid-template-rows: 1fr auto auto auto auto;
@@ -733,6 +744,7 @@ h2{
                 } 
            } 
           }
+          //Preguntas Frecuentes
           .container6 {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
@@ -783,6 +795,7 @@ h2{
           }
       }
       @media screen and (min-width:500px) and (max-width:768px){
+        //Pagina de inicio
         .container1 { 
             grid-template-columns: 1fr;
             grid-template-rows: 1fr auto auto auto;
@@ -834,6 +847,7 @@ h2{
           width: 95%;
           font-size: 1.6vh;
         }
+        //Sobre Nosotros
           .container2 { 
             grid-template-columns: 1fr;
             grid-template-rows: 1fr auto auto auto auto auto auto auto auto;
@@ -871,6 +885,7 @@ h2{
                 }
             }
           }
+          //Contacto
           .container3 {  
             grid-template-columns: 1fr;
             grid-template-rows: 0.5fr auto auto auto 0.5fr;
@@ -897,6 +912,7 @@ h2{
                 } 
            } 
           }
+          //Productos
           .container4 {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
@@ -942,6 +958,7 @@ h2{
             }
           }
           }
+          //Pagina de compra
           .container5 {  
             grid-template-columns: 1fr;
             grid-template-rows: 1fr auto auto auto auto;
@@ -968,6 +985,7 @@ h2{
                 } 
            } 
           }
+          //Preguntas Frecuentes
           .container6 {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
@@ -1018,6 +1036,7 @@ h2{
           }
       }
       @media screen and (min-width:320px) and (max-width:500px){
+        //Pagina de inicio
         .container1 { 
             grid-template-columns: 1fr;
             grid-template-rows: 1fr auto auto auto;
@@ -1072,6 +1091,7 @@ h2{
           width: 95%;
           font-size: 1.6vh;
         }
+        //Sobre Nosotros
           .container2 { 
             grid-template-columns: 1fr;
             grid-template-rows: 1fr auto auto auto auto auto auto auto auto;
@@ -1109,6 +1129,7 @@ h2{
                 }
             }
           }
+          //Contacto
           .container3 {  
             grid-template-columns: 1fr;
             grid-template-rows: 0.5fr auto auto auto 0.5fr;
@@ -1135,6 +1156,7 @@ h2{
                 } 
            } 
           }
+          //Productos
           .container4 {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
@@ -1180,6 +1202,7 @@ h2{
             }
           }
           }
+          //Pagina de compra
           .container5 {  
             grid-template-columns: 1fr;
             grid-template-rows: 1fr auto auto auto auto;
@@ -1206,6 +1229,7 @@ h2{
                 } 
            } 
           }
+          //Preguntas Frecuentes
           .container6 {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
