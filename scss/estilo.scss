@@ -1,0 +1,1243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../Fotos/background3.png);
+    background-color: black;
+    margin: auto;
+    background-repeat:round;
+}
+.container1{
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    background-color:rgba(248, 236, 220, 0.795);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto auto auto;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "carousel carousel"
+      "article article"
+      "footer footer";
+    .header{
+            grid-area: header;
+            header{
+             nav{
+                .navdiv{
+                    a{
+                        .logo{
+                            background-color: white;
+                            width: 100px;
+                            opacity: 0.7;
+                            &:hover{
+                                 opacity: 1;
+                            }
+                        }
+                       
+                    }
+                    .hover:hover{
+                        background-color: rgb(86, 5, 139);
+                    }
+                }
+             } 
+            }
+    }
+    .article{
+        grid-area: article;
+        font-family: 'Roboto Slab', serif; 
+    }
+    .carousel{
+        grid-area: carousel;
+        padding: 5px;
+        margin: 0 auto;
+    }
+}
+.footer{
+    grid-area: footer;
+    width: 90%;
+    margin: 0 auto;
+    background-color:rgba(248, 236, 220, 0.795);
+    .h2f{
+        font-family: 'Rosarivo', serif;
+    }
+    
+}
+footer{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    .h2f{
+        font-family: 'Rosarivo', serif;
+    }
+    .instagram{
+        inline-size: 90px;
+        opacity: 0.6;
+    }
+    .instagram:hover{
+        opacity: 1;
+    }
+    .facebook{
+        inline-size: 75px;
+        opacity: 0.6;
+    }
+    .facebook:hover{
+        opacity: 1;
+    }
+    .tiktok{
+        inline-size: 88px;
+        opacity: 0.6;
+    }
+    .tiktok:hover{
+        opacity: 1;
+    }
+}
+.titulo{
+    font-family: 'Rosarivo', cursive;
+    margin-top: 45px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+ }  
+ .subtitulo{
+    font-style: italic;
+    padding: 10px;
+    font-family: 'Bungee Spice', cursive;
+    text-align: right;
+ }
+ .parrafo1{
+    width: 90%;
+    margin: 0px auto;
+    padding: 10px;
+    text-align: justify;
+    text-justify: auto;
+    font-size: 2vh;
+}
+h1{
+    color: rgb(48, 48, 48);
+    margin-top: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    font-family: 'Rosarivo', serif;
+}
+h2{
+    font-weight: normal;
+    font-family: 'Rosarivo', serif;
+}
+.container2 { 
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    background-color:rgba(248, 236, 220, 0.795);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto auto  auto auto auto 0.5fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "hr2 hr2"
+      "texto1 imagen1"
+      "hr3 hr3"
+      "imagen2 texto2"
+      "hr hr"
+      "footer2 footer2";
+      .header{
+        grid-area: header;
+        .navdiv{
+            a{
+                .logo{
+                    background-color: white;
+                    width: 100px;
+                    opacity: 0.7;
+                    &:hover{
+                         opacity: 1;
+                    }
+                }
+               
+            }
+            .hover:hover{
+                background-color: rgb(86, 5, 139);
+            }
+        }
+     } 
+     .texto1{
+        grid-area: texto1;
+        font-family: 'Roboto Slab', serif;
+        font-weight:400;
+        margin: auto;
+        margin-top: 25px;
+     }
+     .imagen1 { 
+        grid-area: imagen1;
+        padding: 20px;
+        align-items: center; 
+        text-align: center; 
+        .img{
+            width: 700px;
+        }
+    }
+    .texto2{
+        grid-area: texto2;
+        font-family: 'Roboto Slab', serif;
+        font-weight:400;
+        margin: auto;
+        margin-top: 25px;
+    }
+    .imagen2 { 
+        grid-area: imagen2;
+        padding: 20px;
+        margin-bottom: 50px;
+        align-items: center;
+        text-align: center;
+        .img{
+            width: 700px;
+        }
+    }
+    .hr{
+        grid-area: hr;
+      }
+      .hr2{
+        grid-area: hr2;
+      }
+      .hr3{
+        grid-area: hr3;
+      }
+      .footer2 { 
+        grid-area: footer2;
+        margin: 0;
+    }
+
+    }
+    .subtitulo2{
+        font-style: italic;
+        padding: 10px;
+        text-align: center;
+        font-family: 'Bungee Spice', cursive;
+    }
+    .container3 {  
+        margin: 0 auto;
+        width: 90%;
+        display: grid;
+        background-color:rgba(248, 236, 220, 0.795);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr auto 2.5fr auto 0.5fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "header header"
+          "hr2 hr2"
+          "formulario formulario"
+          "hr hr"
+          "footer3 footer3";
+          .header{
+            grid-area: header;
+            .navdiv{
+                a{
+                    .logo{
+                        background-color: white;
+                        width: 100px;
+                        opacity: 0.7;
+                        &:hover{
+                             opacity: 1;
+                        }
+                    }
+                   
+                }
+                .hover:hover{
+                    background-color: rgb(86, 5, 139);
+                }
+            }
+         } 
+         .hr2{
+            grid-area: hr2;
+          }
+          .formulario { grid-area: formulario;
+            text-align: center;
+            margin: 0 auto;
+            form{
+                padding: 20px;
+                .input{
+                    padding: 15px;
+                }
+                .boton{
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+            }
+        }
+        .hr{
+            grid-area: hr;
+          }
+          .footer3{
+            grid-area: footer3;
+            margin: 0;
+          }
+      }
+      .container4 {
+        margin: 0 auto;
+        width: 90%;
+        display: grid;
+        background-color:rgba(248, 236, 220, 0.795);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr auto auto auto auto auto auto 0.5fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "header header"
+          "hr hr"
+          "anuncio1 car1"
+          "hr2 hr2"
+          "anuncio2 car2"
+          "hr3 hr3"
+          "anuncio3 car3"
+          "hr4 hr4"
+          "footer2 footer2";
+          .header{
+            grid-area: header;
+            .navdiv{
+                a{
+                    .logo{
+                        background-color: white;
+                        width: 100px;
+                        opacity: 0.7;
+                        &:hover{
+                             opacity: 1;
+                        }
+                    }
+                   
+                }
+                .hover:hover{
+                    background-color: rgb(86, 5, 139);
+                }
+            }
+         } 
+         .anuncio1 {
+            grid-area: anuncio1;
+            font-family: 'Roboto Slab', serif;
+            font-weight:400;
+            margin: auto;
+            margin-top: 25px;
+            padding: 25px;
+            .comprar{
+                text-align: right;
+                padding: 20px;
+            
+            }
+        }
+        .anuncio2 {
+            grid-area: anuncio2;
+            font-family: 'Roboto Slab', serif;
+            font-weight:400;
+            margin: auto;
+            margin-top: 25px;
+            padding: 25px;
+            .comprar{
+                text-align: right;
+                padding: 20px;
+            }
+        }
+        .anuncio3 { 
+            grid-area: anuncio3;
+            font-family: 'Roboto Slab', serif;
+            font-weight:400;
+            margin: auto;
+            margin-top: 25px;
+            padding: 25px;
+            .comprar{
+                text-align: right;
+                padding: 20px;
+            
+            }
+        }
+        .car1 { 
+            grid-area: car1;
+            padding: 45px;
+            align-items: center;
+            .carousel { 
+                margin: 0 auto;
+            }
+        }
+        .car2 { 
+            grid-area: car2;
+            align-items: center;
+            padding: 40px;
+            .carousel { 
+                margin: 0 auto;
+            }
+        }
+        .car3 { 
+            grid-area: car3;
+            align-items: center;
+            padding: 38px;
+            .carousel { 
+                margin: 0 auto;
+            }
+        }
+        .hr{
+            grid-area: hr;
+          }
+          .hr2{
+            grid-area: hr2;
+          }
+          .hr3{
+            grid-area: hr3;
+          }
+          .hr4{
+            grid-area: hr4;
+          }
+          .footer2 { 
+            grid-area: footer2;
+            margin: 0;
+        }
+      }
+      .container5 {  
+        margin: 0 auto;
+        width: 90%;
+        display: grid;
+        background-color:rgba(248, 236, 220, 0.795);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr auto 2.5fr auto 0.5fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "header header"
+          "hr2 hr2"
+          "formulario2 formulario2"
+          "hr hr"
+          "footer2 footer2";
+          .header{
+            grid-area: header;
+            .navdiv{
+                a{
+                    .logo{
+                        background-color: white;
+                        width: 100px;
+                        opacity: 0.7;
+                        &:hover{
+                             opacity: 1;
+                        }
+                    }
+                   
+                }
+                .hover:hover{
+                    background-color: rgb(86, 5, 139);
+                }
+            }
+         } 
+         .formulario2{
+            grid-area: formulario2;
+            padding: 20px;
+            margin: 0 auto;
+        }
+        .hr{
+            grid-area: hr;
+          }
+          .hr2{
+            grid-area: hr2;
+          }
+          .footer2 { 
+            grid-area: footer2;
+            margin: 0;
+        }
+      }
+      .container6 {
+        margin: 0 auto;
+        width: 90%;  
+        display: grid;
+        background-color:rgba(248, 236, 220, 0.795);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr auto auto auto auto auto auto auto 0.5fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "header header"
+          "hr2 hr2"
+          "pregunta1 foto1"
+          "hr3 hr3"
+          "foto2 pregunta2"
+          "hr4 hr4"
+          "pregunta3 foto3"
+          "hr hr"
+          "footer2 footer2";
+          .header{
+            grid-area: header;
+            .navdiv{
+                a{
+                    .logo{
+                        background-color: white;
+                        width: 100px;
+                        opacity: 0.7;
+                        &:hover{
+                             opacity: 1;
+                        }
+                    }
+                   
+                }
+                .hover:hover{
+                    background-color: rgb(86, 5, 139);
+                }
+            }
+         } 
+         .hr2{
+            grid-area: hr2;
+          }
+          .pregunta1 { 
+            grid-area: pregunta1;
+            font-family: 'Roboto Slab', serif;
+            margin: auto;
+            font-weight:400;
+            margin-top: 25px;
+            padding: 25px;
+          }
+          .foto1 { 
+            grid-area: foto1;
+            padding: 25px;
+            align-items: center; 
+            text-align: center; 
+            margin-top: 20px;
+            .pregunta-img{
+                width: 450px;
+              }
+          }
+          .foto2 { 
+            grid-area: foto2;
+            padding: 25px;
+            align-items: center; 
+            text-align: center; 
+            .pregunta-img2{
+                width: 600px;
+              }
+          }
+          .pregunta2 { grid-area: pregunta2;
+            font-family: 'Roboto Slab', serif;
+            margin: auto;
+            font-weight:400;
+            margin-top: 10px;
+            padding: 25px;
+           }
+           .pregunta3 { 
+            grid-area: pregunta3;
+            font-family: 'Roboto Slab', serif;
+            margin: auto;
+            font-weight:400;
+            margin-top: 10px;
+            padding: 25px;
+          }
+          .foto3 { 
+            grid-area: foto3;
+            padding: 25px;
+            align-items: center; 
+            text-align: center; 
+            .pregunta-img{
+                width: 450px;
+              }
+          }
+          .hr{
+            grid-area: hr;
+          }
+          .hr3{
+            grid-area: hr3;
+          }
+          .hr4{
+            grid-area: hr4;
+          }
+          .footer2 { 
+            grid-area: footer2;
+            margin: 0;
+        }
+        
+      }
+      @media screen and (min-width:768px) and (max-width:1600px){
+        .container1 { 
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto auto auto;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "header"
+              "carousel" 
+              "article"
+              "footer";
+              .header{
+                header{
+                 nav{
+                    .navdiv{
+                        a{
+                            font-size: 15px; 
+                            .logo{
+                                width: 80px;
+                            }
+                           
+                        }
+                    }
+                 } 
+                }
+        }
+              .carousel {  
+                width: auto;
+            }
+        }
+        .subtitulo{
+            font-size: 20px;
+        }
+        .parrafo1{
+          width: 95%;
+          font-size: 1.8vh;
+        }
+          .container2 { 
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto auto auto auto auto auto auto auto;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "header"
+              "hr2"
+              "texto1"
+              "imagen1"
+              "hr3"
+              "texto2"
+              "imagen2"
+              "hr"
+              "footer2";
+              .header{
+                 nav{
+                    .navdiv{
+                        a{
+                            font-size: 15px; 
+                            .logo{
+                                width: 80px;
+                            }
+                           
+                        }
+                    }
+                 } 
+            } 
+            .texto1, .texto2{
+                padding: 10px;
+              }
+            .imagen1, .imagen2{
+                .img{
+                    width: 500px;
+                }
+            }
+          }
+          .container3 {  
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr auto auto auto 0.5fr;
+            grid-auto-columns: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "header"
+              "hr2"
+              "formulario"
+              "hr"
+              "footer3";
+            .header{
+                nav{
+                   .navdiv{
+                       a{
+                           font-size: 15px; 
+                           .logo{
+                               width: 80px;
+                           }
+                          
+                       }
+                   }
+                } 
+           } 
+          }
+          .container4 {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
+            grid-auto-columns: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "header"
+              "hr"
+              "anuncio1"
+              "car1"
+              "hr2"
+              "anuncio2"
+              "car2"
+              "hr3"
+              "anuncio3" 
+              "car3"
+              "hr4"
+              "footer2";
+              .header{
+                nav{
+                   .navdiv{
+                       a{
+                           font-size: 15px; 
+                           .logo{
+                               width: 80px;
+                           }
+                          
+                       }
+                   }
+                } 
+           }
+           .anuncio1, .anuncio2, .anuncio3{
+            padding: 10px;
+            .comprar{
+                text-align: center;
+            }
+          }
+          .car1, .car2, .car3{
+            .carousel {  
+                width: auto;
+            }
+          }
+          }
+          .container5 {  
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto auto auto auto;
+            grid-auto-columns: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "header"
+              "hr2"
+              "formulario2"
+              "hr"
+              "footer2";
+              .header{
+                nav{
+                   .navdiv{
+                       a{
+                           font-size: 15px; 
+                           .logo{
+                               width: 80px;
+                           }
+                          
+                       }
+                   }
+                } 
+           } 
+          }
+          .container6 {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
+            grid-auto-columns: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: column;
+            grid-template-areas:
+              "header"
+              "hr2"
+              "pregunta1" 
+              "foto1"
+              "hr3"
+              "pregunta2"
+              "foto2" 
+              "hr4"
+              "pregunta3" 
+              "foto3"
+              "hr"
+              "footer2";
+             .header{
+                nav{
+                   .navdiv{
+                       a{
+                           font-size: 15px; 
+                           .logo{
+                               width: 80px;
+                           }
+                          
+                       }
+                   }
+                } 
+           } 
+           .pregunta1, .pregunta2, .pregunta3{
+            padding: 10px;
+            }
+            .foto1, .foto3{
+                .pregunta-img{
+                    width: 400px;
+                }
+            }
+            .foto2{
+                .pregunta-img2{
+                    width: 470px;
+                  }
+            }
+          }
+      }
+      @media screen and (min-width:500px) and (max-width:768px){
+        .container1 { 
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto auto auto;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "header"
+              "carousel" 
+              "article"
+              "footer";
+              .header{
+                header{
+                 nav{
+                    .navdiv{
+                        a{
+                            font-size: 13px; 
+                            .logo{
+                                width: 60px;
+                            }
+                           
+                        }
+                    }
+                 } 
+                }
+        }
+              .carousel {  
+                width: auto;
+            }
+        }
+        footer{
+            align-items: center;
+            display: flex;
+            justify-content: space-evenly;
+
+            .instagram{
+                inline-size: 70px;
+            }
+            .facebook{
+                inline-size: 60px;
+            }
+            .tiktok{
+                inline-size: 68px;
+            }
+        }
+        .subtitulo{
+            font-size: 20px;
+        }
+        .parrafo1{
+          width: 95%;
+          font-size: 1.6vh;
+        }
+          .container2 { 
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto auto auto auto auto auto auto auto;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "header"
+              "hr2"
+              "texto1"
+              "imagen1"
+              "hr3"
+              "texto2"
+              "imagen2"
+              "hr"
+              "footer2";
+              .header{
+                 nav{
+                    .navdiv{
+                        a{
+                            font-size: 13px; 
+                            .logo{
+                                width: 60px;
+                            }
+                           
+                        }
+                    }
+                 } 
+            } 
+            .texto1, .texto2{
+                padding: 5px;
+              }
+            .imagen1, .imagen2{
+                .img{
+                    width: 350px;
+                }
+            }
+          }
+          .container3 {  
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr auto auto auto 0.5fr;
+            grid-auto-columns: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "header"
+              "hr2"
+              "formulario"
+              "hr"
+              "footer3";
+            .header{
+                nav{
+                   .navdiv{
+                       a{
+                           font-size: 13px; 
+                           .logo{
+                               width: 60px;
+                           }
+                          
+                       }
+                   }
+                } 
+           } 
+          }
+          .container4 {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
+            grid-auto-columns: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "header"
+              "hr"
+              "anuncio1"
+              "car1"
+              "hr2"
+              "anuncio2"
+              "car2"
+              "hr3"
+              "anuncio3" 
+              "car3"
+              "hr4"
+              "footer2";
+              .header{
+                nav{
+                   .navdiv{
+                       a{
+                           font-size: 13px; 
+                           .logo{
+                               width: 60px;
+                           }
+                          
+                       }
+                   }
+                } 
+           }
+           .anuncio1, .anuncio2, .anuncio3{
+            padding: 5px;
+            .comprar{
+                text-align: center;
+            }
+          }
+          .car1, .car2, .car3{
+            .carousel {  
+                width: auto;
+            }
+          }
+          }
+          .container5 {  
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto auto auto auto;
+            grid-auto-columns: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "header"
+              "hr2"
+              "formulario2"
+              "hr"
+              "footer2";
+              .header{
+                nav{
+                   .navdiv{
+                       a{
+                           font-size: 13px; 
+                           .logo{
+                               width: 60px;
+                           }
+                          
+                       }
+                   }
+                } 
+           } 
+          }
+          .container6 {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
+            grid-auto-columns: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: column;
+            grid-template-areas:
+              "header"
+              "hr2"
+              "pregunta1" 
+              "foto1"
+              "hr3"
+              "pregunta2"
+              "foto2" 
+              "hr4"
+              "pregunta3" 
+              "foto3"
+              "hr"
+              "footer2";
+             .header{
+                nav{
+                   .navdiv{
+                       a{
+                           font-size: 13px; 
+                           .logo{
+                               width: 60px;
+                           }
+                          
+                       }
+                   }
+                } 
+           } 
+           .pregunta1, .pregunta2, .pregunta3{
+            padding: 5px;
+            }
+            .foto1, .foto3{
+                .pregunta-img{
+                    width: 350px;
+                }
+            }
+            .foto2{
+                .pregunta-img2{
+                    width: 400px;
+                  }
+            }
+          }
+      }
+      @media screen and (min-width:320px) and (max-width:500px){
+        .container1 { 
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto auto auto;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "header"
+              "carousel" 
+              "article"
+              "footer";
+              .header{
+                header{
+                 nav{
+                    .navdiv{
+                        a{
+                            font-size: 12px; 
+                            .logo{
+                                width: 55px;
+                            }
+                           
+                        }
+                    }
+                 } 
+                }
+        }
+              .carousel {  
+                width: auto;
+            }
+        }
+        footer{
+            align-items: center;
+            display: flex;
+            justify-content: space-evenly;
+
+            .instagram{
+                inline-size: 62px;
+            }
+            .facebook{
+                inline-size: 52px;
+            }
+            .tiktok{
+                inline-size: 60px;
+            }
+        }
+        .titulo{
+            font-size: 25px;
+        }
+        .subtitulo{
+            font-size: 15px;
+        }
+        .parrafo1{
+          width: 95%;
+          font-size: 1.6vh;
+        }
+          .container2 { 
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto auto auto auto auto auto auto auto;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "header"
+              "hr2"
+              "texto1"
+              "imagen1"
+              "hr3"
+              "texto2"
+              "imagen2"
+              "hr"
+              "footer2";
+              .header{
+                 nav{
+                    .navdiv{
+                        a{
+                            font-size: 12px; 
+                            .logo{
+                                width: 55px;
+                            }
+                           
+                        }
+                    }
+                 } 
+            } 
+            .texto1, .texto2{
+                padding: 5px;
+              }
+            .imagen1, .imagen2{
+                .img{
+                    width: 250px;
+                }
+            }
+          }
+          .container3 {  
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr auto auto auto 0.5fr;
+            grid-auto-columns: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "header"
+              "hr2"
+              "formulario"
+              "hr"
+              "footer3";
+            .header{
+                nav{
+                   .navdiv{
+                       a{
+                           font-size: 12px; 
+                           .logo{
+                               width: 55px;
+                           }
+                          
+                       }
+                   }
+                } 
+           } 
+          }
+          .container4 {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
+            grid-auto-columns: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "header"
+              "hr"
+              "anuncio1"
+              "car1"
+              "hr2"
+              "anuncio2"
+              "car2"
+              "hr3"
+              "anuncio3" 
+              "car3"
+              "hr4"
+              "footer2";
+              .header{
+                nav{
+                   .navdiv{
+                       a{
+                           font-size: 12px; 
+                           .logo{
+                               width: 55px;
+                           }
+                          
+                       }
+                   }
+                } 
+           }
+           .anuncio1, .anuncio2, .anuncio3{
+            padding: 5px;
+            .comprar{
+                text-align: center;
+            }
+          }
+          .car1, .car2, .car3{
+            .carousel {  
+                width: auto;
+            }
+          }
+          }
+          .container5 {  
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto auto auto auto;
+            grid-auto-columns: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "header"
+              "hr2"
+              "formulario2"
+              "hr"
+              "footer2";
+              .header{
+                nav{
+                   .navdiv{
+                       a{
+                           font-size: 12px; 
+                           .logo{
+                               width: 55px;
+                           }
+                          
+                       }
+                   }
+                } 
+           } 
+          }
+          .container6 {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
+            grid-auto-columns: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: column;
+            grid-template-areas:
+              "header"
+              "hr2"
+              "pregunta1" 
+              "foto1"
+              "hr3"
+              "pregunta2"
+              "foto2" 
+              "hr4"
+              "pregunta3" 
+              "foto3"
+              "hr"
+              "footer2";
+             .header{
+                nav{
+                   .navdiv{
+                       a{
+                           font-size: 12px; 
+                           .logo{
+                               width: 55px;
+                           }
+                          
+                       }
+                   }
+                } 
+           } 
+           .pregunta1, .pregunta2, .pregunta3{
+            padding: 5px;
+            }
+            .foto1, .foto3{
+                .pregunta-img{
+                    width: 250px;
+                }
+            }
+            .foto2{
+                .pregunta-img2{
+                    width: 250px;
+                  }
+            }
+          }
+      }
