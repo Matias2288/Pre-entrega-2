@@ -361,6 +361,7 @@ h2{
             grid-area: car1;
             padding: 45px;
             align-items: center;
+            margin-top: 50px;
             .carousel { 
                 margin: 0 auto;
             }
@@ -369,6 +370,7 @@ h2{
             grid-area: car2;
             align-items: center;
             padding: 40px;
+            margin-top: 50px;
             .carousel { 
                 margin: 0 auto;
             }
@@ -377,6 +379,7 @@ h2{
             grid-area: car3;
             align-items: center;
             padding: 38px;
+            margin-top: 50px;
             .carousel { 
                 margin: 0 auto;
             }
@@ -504,7 +507,7 @@ h2{
             padding: 25px;
             align-items: center; 
             text-align: center; 
-            margin-top: 20px;
+            margin-top: 130px;
             .pregunta-img{
                 width: 450px;
               }
@@ -514,6 +517,7 @@ h2{
             padding: 25px;
             align-items: center; 
             text-align: center; 
+            margin-top: 100px;
             .pregunta-img2{
                 width: 600px;
               }
@@ -538,6 +542,7 @@ h2{
             padding: 25px;
             align-items: center; 
             text-align: center; 
+            margin-top: 130px;
             .pregunta-img{
                 width: 450px;
               }
@@ -696,6 +701,7 @@ h2{
             }
           }
           .car1, .car2, .car3{
+            margin-top: auto;
             .carousel {  
                 width: auto;
             }
@@ -763,11 +769,13 @@ h2{
             padding: 10px;
             }
             .foto1, .foto3{
+                margin-top: auto;
                 .pregunta-img{
                     width: 400px;
                 }
             }
             .foto2{
+                margin-top: auto;
                 .pregunta-img2{
                     width: 470px;
                   }
@@ -928,6 +936,7 @@ h2{
             }
           }
           .car1, .car2, .car3{
+            margin-top: auto;
             .carousel {  
                 width: auto;
             }
@@ -995,11 +1004,13 @@ h2{
             padding: 5px;
             }
             .foto1, .foto3{
+                margin-top: auto;
                 .pregunta-img{
                     width: 350px;
                 }
             }
             .foto2{
+                margin-top: auto;
                 .pregunta-img2{
                     width: 400px;
                   }
@@ -1163,6 +1174,7 @@ h2{
             }
           }
           .car1, .car2, .car3{
+            margin-top: auto;
             .carousel {  
                 width: auto;
             }
@@ -1230,11 +1242,13 @@ h2{
             padding: 5px;
             }
             .foto1, .foto3{
+                margin-top: auto;
                 .pregunta-img{
                     width: 250px;
                 }
             }
             .foto2{
+                margin-top: auto;
                 .pregunta-img2{
                     width: 250px;
                   }

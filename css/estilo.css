@@ -259,19 +259,22 @@ h2 {
   .container4 .car1 {
     grid-area: car1;
     padding: 45px;
-    align-items: center; }
+    align-items: center;
+    margin-top: 50px; }
     .container4 .car1 .carousel {
       margin: 0 auto; }
   .container4 .car2 {
     grid-area: car2;
     align-items: center;
-    padding: 40px; }
+    padding: 40px;
+    margin-top: 50px; }
     .container4 .car2 .carousel {
       margin: 0 auto; }
   .container4 .car3 {
     grid-area: car3;
     align-items: center;
-    padding: 38px; }
+    padding: 38px;
+    margin-top: 50px; }
     .container4 .car3 .carousel {
       margin: 0 auto; }
   .container4 .hr {
@@ -354,14 +357,15 @@ h2 {
     padding: 25px;
     align-items: center;
     text-align: center;
-    margin-top: 20px; }
+    margin-top: 130px; }
     .container6 .foto1 .pregunta-img {
       width: 450px; }
   .container6 .foto2 {
     grid-area: foto2;
     padding: 25px;
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    margin-top: 100px; }
     .container6 .foto2 .pregunta-img2 {
       width: 600px; }
   .container6 .pregunta2 {
@@ -382,7 +386,8 @@ h2 {
     grid-area: foto3;
     padding: 25px;
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    margin-top: 130px; }
     .container6 .foto3 .pregunta-img {
       width: 450px; }
   .container6 .hr {
@@ -453,8 +458,10 @@ h2 {
       padding: 10px; }
       .container4 .anuncio1 .comprar, .container4 .anuncio2 .comprar, .container4 .anuncio3 .comprar {
         text-align: center; }
-    .container4 .car1 .carousel, .container4 .car2 .carousel, .container4 .car3 .carousel {
-      width: auto; }
+    .container4 .car1, .container4 .car2, .container4 .car3 {
+      margin-top: auto; }
+      .container4 .car1 .carousel, .container4 .car2 .carousel, .container4 .car3 .carousel {
+        width: auto; }
   .container5 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto auto auto;
@@ -479,10 +486,14 @@ h2 {
         width: 80px; }
     .container6 .pregunta1, .container6 .pregunta2, .container6 .pregunta3 {
       padding: 10px; }
-    .container6 .foto1 .pregunta-img, .container6 .foto3 .pregunta-img {
-      width: 400px; }
-    .container6 .foto2 .pregunta-img2 {
-      width: 470px; } }
+    .container6 .foto1, .container6 .foto3 {
+      margin-top: auto; }
+      .container6 .foto1 .pregunta-img, .container6 .foto3 .pregunta-img {
+        width: 400px; }
+    .container6 .foto2 {
+      margin-top: auto; }
+      .container6 .foto2 .pregunta-img2 {
+        width: 470px; } }
 
 @media screen and (min-width: 500px) and (max-width: 768px) {
   .container1 {
@@ -552,8 +563,10 @@ h2 {
       padding: 5px; }
       .container4 .anuncio1 .comprar, .container4 .anuncio2 .comprar, .container4 .anuncio3 .comprar {
         text-align: center; }
-    .container4 .car1 .carousel, .container4 .car2 .carousel, .container4 .car3 .carousel {
-      width: auto; }
+    .container4 .car1, .container4 .car2, .container4 .car3 {
+      margin-top: auto; }
+      .container4 .car1 .carousel, .container4 .car2 .carousel, .container4 .car3 .carousel {
+        width: auto; }
   .container5 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto auto auto;
@@ -578,10 +591,14 @@ h2 {
         width: 60px; }
     .container6 .pregunta1, .container6 .pregunta2, .container6 .pregunta3 {
       padding: 5px; }
-    .container6 .foto1 .pregunta-img, .container6 .foto3 .pregunta-img {
-      width: 350px; }
-    .container6 .foto2 .pregunta-img2 {
-      width: 400px; } }
+    .container6 .foto1, .container6 .foto3 {
+      margin-top: auto; }
+      .container6 .foto1 .pregunta-img, .container6 .foto3 .pregunta-img {
+        width: 350px; }
+    .container6 .foto2 {
+      margin-top: auto; }
+      .container6 .foto2 .pregunta-img2 {
+        width: 400px; } }
 
 @media screen and (min-width: 320px) and (max-width: 500px) {
   .container1 {
@@ -653,8 +670,10 @@ h2 {
       padding: 5px; }
       .container4 .anuncio1 .comprar, .container4 .anuncio2 .comprar, .container4 .anuncio3 .comprar {
         text-align: center; }
-    .container4 .car1 .carousel, .container4 .car2 .carousel, .container4 .car3 .carousel {
-      width: auto; }
+    .container4 .car1, .container4 .car2, .container4 .car3 {
+      margin-top: auto; }
+      .container4 .car1 .carousel, .container4 .car2 .carousel, .container4 .car3 .carousel {
+        width: auto; }
   .container5 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto auto auto;
@@ -679,7 +698,11 @@ h2 {
         width: 55px; }
     .container6 .pregunta1, .container6 .pregunta2, .container6 .pregunta3 {
       padding: 5px; }
-    .container6 .foto1 .pregunta-img, .container6 .foto3 .pregunta-img {
-      width: 250px; }
-    .container6 .foto2 .pregunta-img2 {
-      width: 250px; } }
+    .container6 .foto1, .container6 .foto3 {
+      margin-top: auto; }
+      .container6 .foto1 .pregunta-img, .container6 .foto3 .pregunta-img {
+        width: 250px; }
+    .container6 .foto2 {
+      margin-top: auto; }
+      .container6 .foto2 .pregunta-img2 {
+        width: 250px; } }
