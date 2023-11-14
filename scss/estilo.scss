@@ -35,14 +35,20 @@ body{
                             background-color: white;
                             width: 100px;
                             opacity: 0.7;
+                            transition: all 0.4s;
                             &:hover{
                                  opacity: 1;
+                                 transform: scale(1.1,1.1);
                             }
                         }
                        
                     }
+                    .hover{
+                        transition: all 0.4s;
+                    }
                     .hover:hover{
                         background-color: rgb(86, 5, 139);
+                        transform: scale(1.2,1.2);
                     }
                 }
              } 
@@ -79,23 +85,29 @@ footer{
     .instagram{
         inline-size: 90px;
         opacity: 0.6;
+        transition: all 0.6s;
     }
     .instagram:hover{
         opacity: 1;
+        transform: scale(1.2, 1.2);
     }
     .facebook{
         inline-size: 75px;
         opacity: 0.6;
+        transition: all 0.6s;
     }
     .facebook:hover{
         opacity: 1;
+        transform: scale(1.2, 1.2);
     }
     .tiktok{
         inline-size: 88px;
         opacity: 0.6;
+        transition: all 0.6s;
     }
     .tiktok:hover{
         opacity: 1;
+        transform: scale(1.2, 1.2);
     }
 }
 .titulo{
@@ -158,14 +170,20 @@ h2{
                     background-color: white;
                     width: 100px;
                     opacity: 0.7;
+                    transition: all 0.4s;
                     &:hover{
                          opacity: 1;
+                         transform: scale(1.1,1.1);
                     }
                 }
                
             }
+            .hover{
+                transition: all 0.4s;
+            }
             .hover:hover{
                 background-color: rgb(86, 5, 139);
+                transform: scale(1.2,1.2);
             }
         }
      } 
@@ -248,14 +266,20 @@ h2{
                         background-color: white;
                         width: 100px;
                         opacity: 0.7;
+                        transition: all 0.4s;
                         &:hover{
                              opacity: 1;
+                             transform: scale(1.1,1.1);
                         }
                     }
                    
                 }
+                .hover{
+                    transition: all 0.4s;
+                }
                 .hover:hover{
                     background-color: rgb(86, 5, 139);
+                    transform: scale(1.2,1.2);
                 }
             }
          } 
@@ -313,14 +337,20 @@ h2{
                         background-color: white;
                         width: 100px;
                         opacity: 0.7;
+                        transition: all 0.4s;
                         &:hover{
                              opacity: 1;
+                             transform: scale(1.1,1.1);
                         }
                     }
                    
                 }
+                .hover{
+                    transition: all 0.4s;
+                }
                 .hover:hover{
                     background-color: rgb(86, 5, 139);
+                    transform: scale(1.2,1.2);
                 }
             }
          } 
@@ -431,14 +461,20 @@ h2{
                         background-color: white;
                         width: 100px;
                         opacity: 0.7;
+                        transition: all 0.4s;
                         &:hover{
                              opacity: 1;
+                             transform: scale(1.1,1.1);
                         }
                     }
                    
                 }
+                .hover{
+                    transition: all 0.4s;
+                }
                 .hover:hover{
                     background-color: rgb(86, 5, 139);
+                    transform: scale(1.2,1.2);
                 }
             }
          } 
@@ -487,14 +523,20 @@ h2{
                         background-color: white;
                         width: 100px;
                         opacity: 0.7;
+                        transition: all 0.4s;
                         &:hover{
                              opacity: 1;
+                             transform: scale(1.1,1.1);
                         }
                     }
                    
                 }
+                .hover{
+                    transition: all 0.4s;
+                }
                 .hover:hover{
                     background-color: rgb(86, 5, 139);
+                    transform: scale(1.2,1.2);
                 }
             }
          } 
@@ -590,8 +632,12 @@ h2{
                             .logo{
                                 width: 80px;
                             }
-                           
                         }
+                        .hover:hover{
+                            transform: scale(1.1,1.1);
+                            padding: 10px;
+                        }
+                       
                     }
                  } 
                 }
@@ -633,6 +679,10 @@ h2{
                             }
                            
                         }
+                        .hover:hover{
+                            transform: scale(1.1,1.1);
+                            padding: 10px;
+                        }
                     }
                  } 
             } 
@@ -668,6 +718,10 @@ h2{
                            }
                           
                        }
+                       .hover:hover{
+                        transform: scale(1.1,1.1);
+                        padding: 10px;
+                    }
                    }
                 } 
            } 
@@ -702,6 +756,10 @@ h2{
                            }
                           
                        }
+                       .hover:hover{
+                        transform: scale(1.1,1.1);
+                        padding: 10px;
+                    }
                    }
                 } 
            }
@@ -741,6 +799,10 @@ h2{
                            }
                           
                        }
+                       .hover:hover{
+                        transform: scale(1.1,1.1);
+                        padding: 10px;
+                    }
                    }
                 } 
            } 
@@ -775,6 +837,10 @@ h2{
                            }
                           
                        }
+                       .hover:hover{
+                        transform: scale(1.1,1.1);
+                        padding: 10px;
+                    }
                    }
                 } 
            } 
@@ -817,6 +883,10 @@ h2{
                                 width: 60px;
                             }
                            
+                        }
+                        .hover:hover{
+                            transform: scale(1.1,1.1);
+                            padding: 10px;
                         }
                     }
                  } 
@@ -874,6 +944,10 @@ h2{
                             }
                            
                         }
+                        .hover:hover{
+                            transform: scale(1.1,1.1);
+                            padding: 10px;
+                        }
                     }
                  } 
             } 
@@ -909,6 +983,10 @@ h2{
                            }
                           
                        }
+                       .hover:hover{
+                        transform: scale(1.1,1.1);
+                        padding: 10px;
+                    }
                    }
                 } 
            } 
@@ -943,6 +1021,10 @@ h2{
                            }
                           
                        }
+                       .hover:hover{
+                        transform: scale(1.1,1.1);
+                        padding: 10px;
+                    }
                    }
                 } 
            }
@@ -982,6 +1064,10 @@ h2{
                            }
                           
                        }
+                       .hover:hover{
+                        transform: scale(1.1,1.1);
+                        padding: 10px;
+                    }
                    }
                 } 
            } 
@@ -1016,6 +1102,10 @@ h2{
                            }
                           
                        }
+                       .hover:hover{
+                        transform: scale(1.1,1.1);
+                        padding: 10px;
+                    }
                    }
                 } 
            } 
@@ -1058,6 +1148,10 @@ h2{
                                 width: 55px;
                             }
                            
+                        }
+                        .hover:hover{
+                            transform: scale(1.1,1.1);
+                            padding: 10px;
                         }
                     }
                  } 
@@ -1116,7 +1210,10 @@ h2{
                             .logo{
                                 width: 55px;
                             }
-                           
+                        }
+                        .hover:hover{
+                            transform: scale(1.1,1.1);
+                            padding: 10px;
                         }
                     }
                  } 
@@ -1153,6 +1250,10 @@ h2{
                            }
                           
                        }
+                       .hover:hover{
+                        transform: scale(1.1,1.1);
+                        padding: 10px;
+                    }
                    }
                 } 
            } 
@@ -1187,6 +1288,10 @@ h2{
                            }
                           
                        }
+                       .hover:hover{
+                        transform: scale(1.1,1.1);
+                        padding: 10px;
+                    }
                    }
                 } 
            }
@@ -1226,6 +1331,10 @@ h2{
                            }
                           
                        }
+                       .hover:hover{
+                        transform: scale(1.1,1.1);
+                        padding: 10px;
+                    }
                    }
                 } 
            } 
@@ -1260,6 +1369,10 @@ h2{
                            }
                           
                        }
+                       .hover:hover{
+                        transform: scale(1.1,1.1);
+                        padding: 10px;
+                    }
                    }
                 } 
            } 

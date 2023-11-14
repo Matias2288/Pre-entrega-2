@@ -25,11 +25,16 @@ body {
     .container1 .header header nav .navdiv a .logo {
       background-color: white;
       width: 100px;
-      opacity: 0.7; }
+      opacity: 0.7;
+      transition: all 0.4s; }
       .container1 .header header nav .navdiv a .logo:hover {
-        opacity: 1; }
+        opacity: 1;
+        transform: scale(1.1, 1.1); }
+    .container1 .header header nav .navdiv .hover {
+      transition: all 0.4s; }
     .container1 .header header nav .navdiv .hover:hover {
-      background-color: #56058b; }
+      background-color: #56058b;
+      transform: scale(1.2, 1.2); }
   .container1 .article {
     grid-area: article;
     font-family: 'Roboto Slab', serif; }
@@ -54,19 +59,25 @@ footer {
     font-family: 'Rosarivo', serif; }
   footer .instagram {
     inline-size: 90px;
-    opacity: 0.6; }
+    opacity: 0.6;
+    transition: all 0.6s; }
   footer .instagram:hover {
-    opacity: 1; }
+    opacity: 1;
+    transform: scale(1.2, 1.2); }
   footer .facebook {
     inline-size: 75px;
-    opacity: 0.6; }
+    opacity: 0.6;
+    transition: all 0.6s; }
   footer .facebook:hover {
-    opacity: 1; }
+    opacity: 1;
+    transform: scale(1.2, 1.2); }
   footer .tiktok {
     inline-size: 88px;
-    opacity: 0.6; }
+    opacity: 0.6;
+    transition: all 0.6s; }
   footer .tiktok:hover {
-    opacity: 1; }
+    opacity: 1;
+    transform: scale(1.2, 1.2); }
 
 .titulo {
   font-family: 'Rosarivo', cursive;
@@ -117,11 +128,16 @@ h2 {
     .container2 .header .navdiv a .logo {
       background-color: white;
       width: 100px;
-      opacity: 0.7; }
+      opacity: 0.7;
+      transition: all 0.4s; }
       .container2 .header .navdiv a .logo:hover {
-        opacity: 1; }
+        opacity: 1;
+        transform: scale(1.1, 1.1); }
+    .container2 .header .navdiv .hover {
+      transition: all 0.4s; }
     .container2 .header .navdiv .hover:hover {
-      background-color: #56058b; }
+      background-color: #56058b;
+      transform: scale(1.2, 1.2); }
   .container2 .texto1 {
     grid-area: texto1;
     font-family: 'Roboto Slab', serif;
@@ -181,11 +197,16 @@ h2 {
     .container3 .header .navdiv a .logo {
       background-color: white;
       width: 100px;
-      opacity: 0.7; }
+      opacity: 0.7;
+      transition: all 0.4s; }
       .container3 .header .navdiv a .logo:hover {
-        opacity: 1; }
+        opacity: 1;
+        transform: scale(1.1, 1.1); }
+    .container3 .header .navdiv .hover {
+      transition: all 0.4s; }
     .container3 .header .navdiv .hover:hover {
-      background-color: #56058b; }
+      background-color: #56058b;
+      transform: scale(1.2, 1.2); }
   .container3 .hr2 {
     grid-area: hr2; }
   .container3 .formulario {
@@ -221,11 +242,16 @@ h2 {
     .container4 .header .navdiv a .logo {
       background-color: white;
       width: 100px;
-      opacity: 0.7; }
+      opacity: 0.7;
+      transition: all 0.4s; }
       .container4 .header .navdiv a .logo:hover {
-        opacity: 1; }
+        opacity: 1;
+        transform: scale(1.1, 1.1); }
+    .container4 .header .navdiv .hover {
+      transition: all 0.4s; }
     .container4 .header .navdiv .hover:hover {
-      background-color: #56058b; }
+      background-color: #56058b;
+      transform: scale(1.2, 1.2); }
   .container4 .anuncio1 {
     grid-area: anuncio1;
     font-family: 'Roboto Slab', serif;
@@ -305,11 +331,16 @@ h2 {
     .container5 .header .navdiv a .logo {
       background-color: white;
       width: 100px;
-      opacity: 0.7; }
+      opacity: 0.7;
+      transition: all 0.4s; }
       .container5 .header .navdiv a .logo:hover {
-        opacity: 1; }
+        opacity: 1;
+        transform: scale(1.1, 1.1); }
+    .container5 .header .navdiv .hover {
+      transition: all 0.4s; }
     .container5 .header .navdiv .hover:hover {
-      background-color: #56058b; }
+      background-color: #56058b;
+      transform: scale(1.2, 1.2); }
   .container5 .formulario2 {
     grid-area: formulario2;
     padding: 20px;
@@ -338,11 +369,16 @@ h2 {
     .container6 .header .navdiv a .logo {
       background-color: white;
       width: 100px;
-      opacity: 0.7; }
+      opacity: 0.7;
+      transition: all 0.4s; }
       .container6 .header .navdiv a .logo:hover {
-        opacity: 1; }
+        opacity: 1;
+        transform: scale(1.1, 1.1); }
+    .container6 .header .navdiv .hover {
+      transition: all 0.4s; }
     .container6 .header .navdiv .hover:hover {
-      background-color: #56058b; }
+      background-color: #56058b;
+      transform: scale(1.2, 1.2); }
   .container6 .hr2 {
     grid-area: hr2; }
   .container6 .pregunta1 {
@@ -411,6 +447,9 @@ h2 {
       font-size: 15px; }
       .container1 .header header nav .navdiv a .logo {
         width: 80px; }
+    .container1 .header header nav .navdiv .hover:hover {
+      transform: scale(1.1, 1.1);
+      padding: 10px; }
     .container1 .carousel {
       width: auto; }
   .subtitulo {
@@ -428,6 +467,9 @@ h2 {
       font-size: 15px; }
       .container2 .header nav .navdiv a .logo {
         width: 80px; }
+    .container2 .header nav .navdiv .hover:hover {
+      transform: scale(1.1, 1.1);
+      padding: 10px; }
     .container2 .texto1, .container2 .texto2 {
       padding: 10px; }
     .container2 .imagen1 .img, .container2 .imagen2 .img {
@@ -443,6 +485,9 @@ h2 {
       font-size: 15px; }
       .container3 .header nav .navdiv a .logo {
         width: 80px; }
+    .container3 .header nav .navdiv .hover:hover {
+      transform: scale(1.1, 1.1);
+      padding: 10px; }
   .container4 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
@@ -454,6 +499,9 @@ h2 {
       font-size: 15px; }
       .container4 .header nav .navdiv a .logo {
         width: 80px; }
+    .container4 .header nav .navdiv .hover:hover {
+      transform: scale(1.1, 1.1);
+      padding: 10px; }
     .container4 .anuncio1, .container4 .anuncio2, .container4 .anuncio3 {
       padding: 10px; }
       .container4 .anuncio1 .comprar, .container4 .anuncio2 .comprar, .container4 .anuncio3 .comprar {
@@ -473,6 +521,9 @@ h2 {
       font-size: 15px; }
       .container5 .header nav .navdiv a .logo {
         width: 80px; }
+    .container5 .header nav .navdiv .hover:hover {
+      transform: scale(1.1, 1.1);
+      padding: 10px; }
   .container6 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
@@ -484,6 +535,9 @@ h2 {
       font-size: 15px; }
       .container6 .header nav .navdiv a .logo {
         width: 80px; }
+    .container6 .header nav .navdiv .hover:hover {
+      transform: scale(1.1, 1.1);
+      padding: 10px; }
     .container6 .pregunta1, .container6 .pregunta2, .container6 .pregunta3 {
       padding: 10px; }
     .container6 .foto1, .container6 .foto3 {
@@ -506,6 +560,9 @@ h2 {
       font-size: 13px; }
       .container1 .header header nav .navdiv a .logo {
         width: 60px; }
+    .container1 .header header nav .navdiv .hover:hover {
+      transform: scale(1.1, 1.1);
+      padding: 10px; }
     .container1 .carousel {
       width: auto; }
   footer {
@@ -533,6 +590,9 @@ h2 {
       font-size: 13px; }
       .container2 .header nav .navdiv a .logo {
         width: 60px; }
+    .container2 .header nav .navdiv .hover:hover {
+      transform: scale(1.1, 1.1);
+      padding: 10px; }
     .container2 .texto1, .container2 .texto2 {
       padding: 5px; }
     .container2 .imagen1 .img, .container2 .imagen2 .img {
@@ -548,6 +608,9 @@ h2 {
       font-size: 13px; }
       .container3 .header nav .navdiv a .logo {
         width: 60px; }
+    .container3 .header nav .navdiv .hover:hover {
+      transform: scale(1.1, 1.1);
+      padding: 10px; }
   .container4 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
@@ -559,6 +622,9 @@ h2 {
       font-size: 13px; }
       .container4 .header nav .navdiv a .logo {
         width: 60px; }
+    .container4 .header nav .navdiv .hover:hover {
+      transform: scale(1.1, 1.1);
+      padding: 10px; }
     .container4 .anuncio1, .container4 .anuncio2, .container4 .anuncio3 {
       padding: 5px; }
       .container4 .anuncio1 .comprar, .container4 .anuncio2 .comprar, .container4 .anuncio3 .comprar {
@@ -578,6 +644,9 @@ h2 {
       font-size: 13px; }
       .container5 .header nav .navdiv a .logo {
         width: 60px; }
+    .container5 .header nav .navdiv .hover:hover {
+      transform: scale(1.1, 1.1);
+      padding: 10px; }
   .container6 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
@@ -589,6 +658,9 @@ h2 {
       font-size: 13px; }
       .container6 .header nav .navdiv a .logo {
         width: 60px; }
+    .container6 .header nav .navdiv .hover:hover {
+      transform: scale(1.1, 1.1);
+      padding: 10px; }
     .container6 .pregunta1, .container6 .pregunta2, .container6 .pregunta3 {
       padding: 5px; }
     .container6 .foto1, .container6 .foto3 {
@@ -611,6 +683,9 @@ h2 {
       font-size: 12px; }
       .container1 .header header nav .navdiv a .logo {
         width: 55px; }
+    .container1 .header header nav .navdiv .hover:hover {
+      transform: scale(1.1, 1.1);
+      padding: 10px; }
     .container1 .carousel {
       width: auto; }
   footer {
@@ -640,6 +715,9 @@ h2 {
       font-size: 12px; }
       .container2 .header nav .navdiv a .logo {
         width: 55px; }
+    .container2 .header nav .navdiv .hover:hover {
+      transform: scale(1.1, 1.1);
+      padding: 10px; }
     .container2 .texto1, .container2 .texto2 {
       padding: 5px; }
     .container2 .imagen1 .img, .container2 .imagen2 .img {
@@ -655,6 +733,9 @@ h2 {
       font-size: 12px; }
       .container3 .header nav .navdiv a .logo {
         width: 55px; }
+    .container3 .header nav .navdiv .hover:hover {
+      transform: scale(1.1, 1.1);
+      padding: 10px; }
   .container4 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
@@ -666,6 +747,9 @@ h2 {
       font-size: 12px; }
       .container4 .header nav .navdiv a .logo {
         width: 55px; }
+    .container4 .header nav .navdiv .hover:hover {
+      transform: scale(1.1, 1.1);
+      padding: 10px; }
     .container4 .anuncio1, .container4 .anuncio2, .container4 .anuncio3 {
       padding: 5px; }
       .container4 .anuncio1 .comprar, .container4 .anuncio2 .comprar, .container4 .anuncio3 .comprar {
@@ -685,6 +769,9 @@ h2 {
       font-size: 12px; }
       .container5 .header nav .navdiv a .logo {
         width: 55px; }
+    .container5 .header nav .navdiv .hover:hover {
+      transform: scale(1.1, 1.1);
+      padding: 10px; }
   .container6 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
@@ -696,6 +783,9 @@ h2 {
       font-size: 12px; }
       .container6 .header nav .navdiv a .logo {
         width: 55px; }
+    .container6 .header nav .navdiv .hover:hover {
+      transform: scale(1.1, 1.1);
+      padding: 10px; }
     .container6 .pregunta1, .container6 .pregunta2, .container6 .pregunta3 {
       padding: 5px; }
     .container6 .foto1, .container6 .foto3 {
