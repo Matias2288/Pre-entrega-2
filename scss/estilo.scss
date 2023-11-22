@@ -1,3 +1,5 @@
+@import "variables";
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +7,6 @@
 }
 body{
     background-image: url(../Fotos/background2.jpg);
-    background-color: black;
     margin: auto;
     background-repeat:round;
 }
@@ -14,7 +15,7 @@ body{
     margin: 0 auto;
     width: 90%;
     display: grid;
-    background-color:rgba(248, 236, 220, 0.795);
+    background-color:$fondo;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto auto auto;
     grid-auto-columns: 1fr;
@@ -32,7 +33,6 @@ body{
                 .navdiv{
                     a{
                         .logo{
-                            background-color: white;
                             width: 100px;
                             opacity: 0.7;
                             transition: all 0.4s;
@@ -47,7 +47,7 @@ body{
                         transition: all 0.4s;
                     }
                     .hover:hover{
-                        background-color: rgb(86, 5, 139);
+                        background-color: $menu;
                         transform: scale(1.2,1.2);
                     }
                 }
@@ -148,7 +148,7 @@ h2{
     margin: 0 auto;
     width: 90%;
     display: grid;
-    background-color:rgba(248, 236, 220, 0.795);
+    background-color:$fondo;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto auto  auto auto auto 0.5fr;
     grid-auto-columns: 1fr;
@@ -167,7 +167,6 @@ h2{
         .navdiv{
             a{
                 .logo{
-                    background-color: white;
                     width: 100px;
                     opacity: 0.7;
                     transition: all 0.4s;
@@ -182,7 +181,7 @@ h2{
                 transition: all 0.4s;
             }
             .hover:hover{
-                background-color: rgb(86, 5, 139);
+                background-color: $menu;
                 transform: scale(1.2,1.2);
             }
         }
@@ -246,7 +245,7 @@ h2{
         margin: 0 auto;
         width: 90%;
         display: grid;
-        background-color:rgba(248, 236, 220, 0.795);
+        background-color:$fondo;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.5fr auto 2.5fr auto 0.5fr;
         grid-auto-columns: 1fr;
@@ -263,7 +262,6 @@ h2{
             .navdiv{
                 a{
                     .logo{
-                        background-color: white;
                         width: 100px;
                         opacity: 0.7;
                         transition: all 0.4s;
@@ -278,7 +276,7 @@ h2{
                     transition: all 0.4s;
                 }
                 .hover:hover{
-                    background-color: rgb(86, 5, 139);
+                    background-color: $menu;
                     transform: scale(1.2,1.2);
                 }
             }
@@ -313,7 +311,7 @@ h2{
         margin: 0 auto;
         width: 90%;
         display: grid;
-        background-color:rgba(248, 236, 220, 0.795);
+        background-color:$fondo;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.5fr auto auto auto auto auto auto 0.5fr;
         grid-auto-columns: 1fr;
@@ -334,7 +332,6 @@ h2{
             .navdiv{
                 a{
                     .logo{
-                        background-color: white;
                         width: 100px;
                         opacity: 0.7;
                         transition: all 0.4s;
@@ -349,7 +346,7 @@ h2{
                     transition: all 0.4s;
                 }
                 .hover:hover{
-                    background-color: rgb(86, 5, 139);
+                    background-color: $menu;
                     transform: scale(1.2,1.2);
                 }
             }
@@ -441,7 +438,7 @@ h2{
         margin: 0 auto;
         width: 90%;
         display: grid;
-        background-color:rgba(248, 236, 220, 0.795);
+        background-color:$fondo;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.5fr auto 2.5fr auto 0.5fr;
         grid-auto-columns: 1fr;
@@ -458,7 +455,6 @@ h2{
             .navdiv{
                 a{
                     .logo{
-                        background-color: white;
                         width: 100px;
                         opacity: 0.7;
                         transition: all 0.4s;
@@ -473,7 +469,7 @@ h2{
                     transition: all 0.4s;
                 }
                 .hover:hover{
-                    background-color: rgb(86, 5, 139);
+                    background-color: $menu;
                     transform: scale(1.2,1.2);
                 }
             }
@@ -499,7 +495,7 @@ h2{
         margin: 0 auto;
         width: 90%;  
         display: grid;
-        background-color:rgba(248, 236, 220, 0.795);
+        background-color:$fondo;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.5fr auto auto auto auto auto auto auto 0.5fr;
         grid-auto-columns: 1fr;
@@ -520,7 +516,6 @@ h2{
             .navdiv{
                 a{
                     .logo{
-                        background-color: white;
                         width: 100px;
                         opacity: 0.7;
                         transition: all 0.4s;
@@ -535,7 +530,7 @@ h2{
                     transition: all 0.4s;
                 }
                 .hover:hover{
-                    background-color: rgb(86, 5, 139);
+                    background-color: $menu;
                     transform: scale(1.2,1.2);
                 }
             }
