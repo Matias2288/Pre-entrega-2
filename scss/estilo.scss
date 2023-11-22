@@ -74,6 +74,13 @@ body{
     }
     
 }
+//Linea de todas las paginas
+.linea, .linea2, .linea3, .linea4{
+    border-top: 1px solid $menu;
+    height: 1px;
+    margin: auto;
+    margin-bottom: 5px;
+  }
 //Footer de todas las paginas
 footer{
     align-items: center;
@@ -150,17 +157,17 @@ h2{
     display: grid;
     background-color:$fondo;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr auto auto  auto auto auto 0.5fr;
+    grid-template-rows: 1fr auto auto auto auto auto 0.5fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       "header header"
-      "hr2 hr2"
+      "linea linea"
       "texto1 imagen1"
-      "hr3 hr3"
+      "linea2 linea2"
       "imagen2 texto2"
-      "hr hr"
+      "linea3 linea3"
       "footer2 footer2";
       .header{
         grid-area: header;
@@ -202,6 +209,24 @@ h2{
             width: 700px;
         }
     }
+    .linea{
+        grid-area: linea;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .linea2{
+        grid-area: linea2;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .linea3{
+        grid-area: linea3;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 15px;    
+    }
     .texto2{
         grid-area: texto2;
         font-family: 'Roboto Slab', serif;
@@ -219,15 +244,6 @@ h2{
             width: 700px;
         }
     }
-    .hr{
-        grid-area: hr;
-      }
-      .hr2{
-        grid-area: hr2;
-      }
-      .hr3{
-        grid-area: hr3;
-      }
       .footer2 { 
         grid-area: footer2;
         margin: 0;
@@ -247,15 +263,15 @@ h2{
         display: grid;
         background-color:$fondo;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr auto 2.5fr auto 0.5fr;
+        grid-template-rows: 0.6fr auto 2.5fr auto 0.6fr;
         grid-auto-columns: 1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
           "header header"
-          "hr2 hr2"
+          "linea linea"
           "formulario formulario"
-          "hr hr"
+          "linea2 linea2"
           "footer3 footer3";
           .header{
             grid-area: header;
@@ -281,9 +297,6 @@ h2{
                 }
             }
          } 
-         .hr2{
-            grid-area: hr2;
-          }
           .formulario { grid-area: formulario;
             text-align: center;
             margin: 0 auto;
@@ -298,9 +311,18 @@ h2{
                 }
             }
         }
-        .hr{
-            grid-area: hr;
-          }
+        .linea{
+            grid-area: linea;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .linea2{
+            grid-area: linea2;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
           .footer3{
             grid-area: footer3;
             margin: 0;
@@ -319,13 +341,13 @@ h2{
         grid-auto-flow: row;
         grid-template-areas:
           "header header"
-          "hr hr"
+          "linea linea"
           "anuncio1 car1"
-          "hr2 hr2"
+          "linea2 linea2"
           "anuncio2 car2"
-          "hr3 hr3"
+          "linea3 linea3"
           "anuncio3 car3"
-          "hr4 hr4"
+          "linea4 linea4"
           "footer2 footer2";
           .header{
             grid-area: header;
@@ -416,18 +438,30 @@ h2{
                 margin: 0 auto;
             }
         }
-        .hr{
-            grid-area: hr;
-          }
-          .hr2{
-            grid-area: hr2;
-          }
-          .hr3{
-            grid-area: hr3;
-          }
-          .hr4{
-            grid-area: hr4;
-          }
+        .linea{
+            grid-area: linea;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .linea2{
+            grid-area: linea2;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .linea3{
+            grid-area: linea3;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .linea4{
+            grid-area: linea4;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 1px;    
+        }
           .footer2 { 
             grid-area: footer2;
             margin: 0;
@@ -446,9 +480,9 @@ h2{
         grid-auto-flow: row;
         grid-template-areas:
           "header header"
-          "hr2 hr2"
+          "linea linea"
           "formulario2 formulario2"
-          "hr hr"
+          "linea2 linea2"
           "footer2 footer2";
           .header{
             grid-area: header;
@@ -479,12 +513,18 @@ h2{
             padding: 20px;
             margin: 0 auto;
         }
-        .hr{
-            grid-area: hr;
-          }
-          .hr2{
-            grid-area: hr2;
-          }
+        .linea{
+            grid-area: linea;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .linea2{
+            grid-area: linea2;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 15px;    
+        }
           .footer2 { 
             grid-area: footer2;
             margin: 0;
@@ -503,13 +543,13 @@ h2{
         grid-auto-flow: row;
         grid-template-areas:
           "header header"
-          "hr2 hr2"
+          "linea linea"
           "pregunta1 foto1"
-          "hr3 hr3"
+          "linea2 linea2"
           "foto2 pregunta2"
-          "hr4 hr4"
+          "linea3 linea3"
           "pregunta3 foto3"
-          "hr hr"
+          "linea4 linea4"
           "footer2 footer2";
           .header{
             grid-area: header;
@@ -535,9 +575,6 @@ h2{
                 }
             }
          } 
-         .hr2{
-            grid-area: hr2;
-          }
           .pregunta1 { 
             grid-area: pregunta1;
             font-family: 'Roboto Slab', serif;
@@ -591,15 +628,30 @@ h2{
                 width: 450px;
               }
           }
-          .hr{
-            grid-area: hr;
-          }
-          .hr3{
-            grid-area: hr3;
-          }
-          .hr4{
-            grid-area: hr4;
-          }
+          .linea{
+            grid-area: linea;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .linea2{
+            grid-area: linea2;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .linea3{
+            grid-area: linea3;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .linea4{
+            grid-area: linea4;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 15px;    
+        }
           .footer2 { 
             grid-area: footer2;
             margin: 0;
@@ -656,13 +708,13 @@ h2{
             grid-auto-flow: row;
             grid-template-areas:
               "header"
-              "hr2"
+              "linea"
               "texto1"
               "imagen1"
-              "hr3"
+              "linea2"
               "texto2"
               "imagen2"
-              "hr"
+              "linea3"
               "footer2";
               .header{
                  nav{
@@ -699,9 +751,9 @@ h2{
             grid-auto-flow: row;
             grid-template-areas:
               "header"
-              "hr2"
+              "linea"
               "formulario"
-              "hr"
+              "linea2"
               "footer3";
             .header{
                 nav{
@@ -730,16 +782,16 @@ h2{
             grid-auto-flow: row;
             grid-template-areas:
               "header"
-              "hr"
+              "linea"
               "anuncio1"
               "car1"
-              "hr2"
+              "linea2"
               "anuncio2"
               "car2"
-              "hr3"
+              "linea3"
               "anuncio3" 
               "car3"
-              "hr4"
+              "linea4"
               "footer2";
               .header{
                 nav{
@@ -770,6 +822,9 @@ h2{
                 width: auto;
             }
           }
+          .linea4{
+            margin-bottom: 15px;
+          }
           }
           //Pagina de compra
           .container5 {  
@@ -780,9 +835,9 @@ h2{
             grid-auto-flow: row;
             grid-template-areas:
               "header"
-              "hr2"
+              "linea"
               "formulario2"
-              "hr"
+              "linea2"
               "footer2";
               .header{
                 nav{
@@ -811,16 +866,16 @@ h2{
             grid-auto-flow: column;
             grid-template-areas:
               "header"
-              "hr2"
+              "linea"
               "pregunta1" 
               "foto1"
-              "hr3"
+              "linea2"
               "pregunta2"
               "foto2" 
-              "hr4"
+              "linea3"
               "pregunta3" 
               "foto3"
-              "hr"
+              "linea4"
               "footer2";
              .header{
                 nav{
@@ -921,13 +976,13 @@ h2{
             grid-auto-flow: row;
             grid-template-areas:
               "header"
-              "hr2"
+              "linea"
               "texto1"
               "imagen1"
-              "hr3"
+              "linea2"
               "texto2"
               "imagen2"
-              "hr"
+              "linea3"
               "footer2";
               .header{
                  nav{
@@ -964,9 +1019,9 @@ h2{
             grid-auto-flow: row;
             grid-template-areas:
               "header"
-              "hr2"
+              "linea"
               "formulario"
-              "hr"
+              "linea2"
               "footer3";
             .header{
                 nav{
@@ -995,16 +1050,16 @@ h2{
             grid-auto-flow: row;
             grid-template-areas:
               "header"
-              "hr"
+              "linea"
               "anuncio1"
               "car1"
-              "hr2"
+              "linea2"
               "anuncio2"
               "car2"
-              "hr3"
+              "linea3"
               "anuncio3" 
               "car3"
-              "hr4"
+              "linea4"
               "footer2";
               .header{
                 nav{
@@ -1035,6 +1090,9 @@ h2{
                 width: auto;
             }
           }
+          .linea4{
+            margin-bottom: 15px;
+          }
           }
           //Pagina de compra
           .container5 {  
@@ -1045,9 +1103,9 @@ h2{
             grid-auto-flow: row;
             grid-template-areas:
               "header"
-              "hr2"
+              "linea"
               "formulario2"
-              "hr"
+              "linea2"
               "footer2";
               .header{
                 nav{
@@ -1076,16 +1134,16 @@ h2{
             grid-auto-flow: column;
             grid-template-areas:
               "header"
-              "hr2"
+              "linea"
               "pregunta1" 
               "foto1"
-              "hr3"
+              "linea2"
               "pregunta2"
               "foto2" 
-              "hr4"
+              "linea3"
               "pregunta3" 
               "foto3"
-              "hr"
+              "linea4"
               "footer2";
              .header{
                 nav{
@@ -1189,13 +1247,13 @@ h2{
             grid-auto-flow: row;
             grid-template-areas:
               "header"
-              "hr2"
+              "linea"
               "texto1"
               "imagen1"
-              "hr3"
+              "linea2"
               "texto2"
               "imagen2"
-              "hr"
+              "linea3"
               "footer2";
               .header{
                  nav{
@@ -1231,9 +1289,9 @@ h2{
             grid-auto-flow: row;
             grid-template-areas:
               "header"
-              "hr2"
+              "linea"
               "formulario"
-              "hr"
+              "linea2"
               "footer3";
             .header{
                 nav{
@@ -1262,16 +1320,16 @@ h2{
             grid-auto-flow: row;
             grid-template-areas:
               "header"
-              "hr"
+              "linea"
               "anuncio1"
               "car1"
-              "hr2"
+              "linea2"
               "anuncio2"
               "car2"
-              "hr3"
+              "linea3"
               "anuncio3" 
               "car3"
-              "hr4"
+              "linea4"
               "footer2";
               .header{
                 nav{
@@ -1302,6 +1360,9 @@ h2{
                 width: auto;
             }
           }
+          .linea4{
+            margin-bottom: 15px;
+          }
           }
           //Pagina de compra
           .container5 {  
@@ -1312,9 +1373,9 @@ h2{
             grid-auto-flow: row;
             grid-template-areas:
               "header"
-              "hr2"
+              "linea"
               "formulario2"
-              "hr"
+              "linea2"
               "footer2";
               .header{
                 nav{
@@ -1343,16 +1404,16 @@ h2{
             grid-auto-flow: column;
             grid-template-areas:
               "header"
-              "hr2"
+              "linea"
               "pregunta1" 
               "foto1"
-              "hr3"
+              "linea2"
               "pregunta2"
               "foto2" 
-              "hr4"
+              "linea3"
               "pregunta3" 
               "foto3"
-              "hr"
+              "linea4"
               "footer2";
              .header{
                 nav{

@@ -49,6 +49,12 @@ body {
   .footer .h2f {
     font-family: 'Rosarivo', serif; }
 
+.linea, .linea2, .linea3, .linea4 {
+  border-top: 1px solid #56058b;
+  height: 1px;
+  margin: auto;
+  margin-bottom: 5px; }
+
 footer {
   align-items: center;
   display: flex;
@@ -116,11 +122,11 @@ h2 {
   display: grid;
   background-color: #f8ecdccb;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr auto auto  auto auto auto 0.5fr;
+  grid-template-rows: 1fr auto auto auto auto auto 0.5fr;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "header header" "hr2 hr2" "texto1 imagen1" "hr3 hr3" "imagen2 texto2" "hr hr" "footer2 footer2"; }
+  grid-template-areas: "header header" "linea linea" "texto1 imagen1" "linea2 linea2" "imagen2 texto2" "linea3 linea3" "footer2 footer2"; }
   .container2 .header {
     grid-area: header; }
     .container2 .header .navdiv a .logo {
@@ -148,6 +154,21 @@ h2 {
     text-align: center; }
     .container2 .imagen1 .img {
       width: 700px; }
+  .container2 .linea {
+    grid-area: linea;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .container2 .linea2 {
+    grid-area: linea2;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .container2 .linea3 {
+    grid-area: linea3;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px; }
   .container2 .texto2 {
     grid-area: texto2;
     font-family: 'Roboto Slab', serif;
@@ -162,12 +183,6 @@ h2 {
     text-align: center; }
     .container2 .imagen2 .img {
       width: 700px; }
-  .container2 .hr {
-    grid-area: hr; }
-  .container2 .hr2 {
-    grid-area: hr2; }
-  .container2 .hr3 {
-    grid-area: hr3; }
   .container2 .footer2 {
     grid-area: footer2;
     margin: 0; }
@@ -184,11 +199,11 @@ h2 {
   display: grid;
   background-color: #f8ecdccb;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr auto 2.5fr auto 0.5fr;
+  grid-template-rows: 0.6fr auto 2.5fr auto 0.6fr;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "header header" "hr2 hr2" "formulario formulario" "hr hr" "footer3 footer3"; }
+  grid-template-areas: "header header" "linea linea" "formulario formulario" "linea2 linea2" "footer3 footer3"; }
   .container3 .header {
     grid-area: header; }
     .container3 .header .navdiv a .logo {
@@ -203,8 +218,6 @@ h2 {
     .container3 .header .navdiv .hover:hover {
       background-color: #56058b;
       transform: scale(1.2, 1.2); }
-  .container3 .hr2 {
-    grid-area: hr2; }
   .container3 .formulario {
     grid-area: formulario;
     text-align: center;
@@ -216,8 +229,16 @@ h2 {
       .container3 .formulario form .boton {
         display: flex;
         justify-content: space-evenly; }
-  .container3 .hr {
-    grid-area: hr; }
+  .container3 .linea {
+    grid-area: linea;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .container3 .linea2 {
+    grid-area: linea2;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px; }
   .container3 .footer3 {
     grid-area: footer3;
     margin: 0; }
@@ -232,7 +253,7 @@ h2 {
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "header header" "hr hr" "anuncio1 car1" "hr2 hr2" "anuncio2 car2" "hr3 hr3" "anuncio3 car3" "hr4 hr4" "footer2 footer2"; }
+  grid-template-areas: "header header" "linea linea" "anuncio1 car1" "linea2 linea2" "anuncio2 car2" "linea3 linea3" "anuncio3 car3" "linea4 linea4" "footer2 footer2"; }
   .container4 .header {
     grid-area: header; }
     .container4 .header .navdiv a .logo {
@@ -298,14 +319,26 @@ h2 {
     margin-top: 50px; }
     .container4 .car3 .carousel {
       margin: 0 auto; }
-  .container4 .hr {
-    grid-area: hr; }
-  .container4 .hr2 {
-    grid-area: hr2; }
-  .container4 .hr3 {
-    grid-area: hr3; }
-  .container4 .hr4 {
-    grid-area: hr4; }
+  .container4 .linea {
+    grid-area: linea;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .container4 .linea2 {
+    grid-area: linea2;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .container4 .linea3 {
+    grid-area: linea3;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .container4 .linea4 {
+    grid-area: linea4;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 1px; }
   .container4 .footer2 {
     grid-area: footer2;
     margin: 0; }
@@ -320,7 +353,7 @@ h2 {
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "header header" "hr2 hr2" "formulario2 formulario2" "hr hr" "footer2 footer2"; }
+  grid-template-areas: "header header" "linea linea" "formulario2 formulario2" "linea2 linea2" "footer2 footer2"; }
   .container5 .header {
     grid-area: header; }
     .container5 .header .navdiv a .logo {
@@ -339,10 +372,16 @@ h2 {
     grid-area: formulario2;
     padding: 20px;
     margin: 0 auto; }
-  .container5 .hr {
-    grid-area: hr; }
-  .container5 .hr2 {
-    grid-area: hr2; }
+  .container5 .linea {
+    grid-area: linea;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .container5 .linea2 {
+    grid-area: linea2;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px; }
   .container5 .footer2 {
     grid-area: footer2;
     margin: 0; }
@@ -357,7 +396,7 @@ h2 {
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "header header" "hr2 hr2" "pregunta1 foto1" "hr3 hr3" "foto2 pregunta2" "hr4 hr4" "pregunta3 foto3" "hr hr" "footer2 footer2"; }
+  grid-template-areas: "header header" "linea linea" "pregunta1 foto1" "linea2 linea2" "foto2 pregunta2" "linea3 linea3" "pregunta3 foto3" "linea4 linea4" "footer2 footer2"; }
   .container6 .header {
     grid-area: header; }
     .container6 .header .navdiv a .logo {
@@ -372,8 +411,6 @@ h2 {
     .container6 .header .navdiv .hover:hover {
       background-color: #56058b;
       transform: scale(1.2, 1.2); }
-  .container6 .hr2 {
-    grid-area: hr2; }
   .container6 .pregunta1 {
     grid-area: pregunta1;
     font-family: 'Roboto Slab', serif;
@@ -419,12 +456,26 @@ h2 {
     margin-top: 130px; }
     .container6 .foto3 .pregunta-img {
       width: 450px; }
-  .container6 .hr {
-    grid-area: hr; }
-  .container6 .hr3 {
-    grid-area: hr3; }
-  .container6 .hr4 {
-    grid-area: hr4; }
+  .container6 .linea {
+    grid-area: linea;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .container6 .linea2 {
+    grid-area: linea2;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .container6 .linea3 {
+    grid-area: linea3;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .container6 .linea4 {
+    grid-area: linea4;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px; }
   .container6 .footer2 {
     grid-area: footer2;
     margin: 0; }
@@ -455,7 +506,7 @@ h2 {
     grid-template-rows: 1fr auto auto auto auto auto auto auto auto;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "header" "hr2" "texto1" "imagen1" "hr3" "texto2" "imagen2" "hr" "footer2"; }
+    grid-template-areas: "header" "linea" "texto1" "imagen1" "linea2" "texto2" "imagen2" "linea3" "footer2"; }
     .container2 .header nav .navdiv a {
       font-size: 15px; }
       .container2 .header nav .navdiv a .logo {
@@ -473,7 +524,7 @@ h2 {
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "header" "hr2" "formulario" "hr" "footer3"; }
+    grid-template-areas: "header" "linea" "formulario" "linea2" "footer3"; }
     .container3 .header nav .navdiv a {
       font-size: 15px; }
       .container3 .header nav .navdiv a .logo {
@@ -487,7 +538,7 @@ h2 {
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "header" "hr" "anuncio1" "car1" "hr2" "anuncio2" "car2" "hr3" "anuncio3"  "car3" "hr4" "footer2"; }
+    grid-template-areas: "header" "linea" "anuncio1" "car1" "linea2" "anuncio2" "car2" "linea3" "anuncio3"  "car3" "linea4" "footer2"; }
     .container4 .header nav .navdiv a {
       font-size: 15px; }
       .container4 .header nav .navdiv a .logo {
@@ -503,13 +554,15 @@ h2 {
       margin-top: auto; }
       .container4 .car1 .carousel, .container4 .car2 .carousel, .container4 .car3 .carousel {
         width: auto; }
+    .container4 .linea4 {
+      margin-bottom: 15px; }
   .container5 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto auto auto;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "header" "hr2" "formulario2" "hr" "footer2"; }
+    grid-template-areas: "header" "linea" "formulario2" "linea2" "footer2"; }
     .container5 .header nav .navdiv a {
       font-size: 15px; }
       .container5 .header nav .navdiv a .logo {
@@ -523,7 +576,7 @@ h2 {
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: column;
-    grid-template-areas: "header" "hr2" "pregunta1"  "foto1" "hr3" "pregunta2" "foto2"  "hr4" "pregunta3"  "foto3" "hr" "footer2"; }
+    grid-template-areas: "header" "linea" "pregunta1"  "foto1" "linea2" "pregunta2" "foto2"  "linea3" "pregunta3"  "foto3" "linea4" "footer2"; }
     .container6 .header nav .navdiv a {
       font-size: 15px; }
       .container6 .header nav .navdiv a .logo {
@@ -578,7 +631,7 @@ h2 {
     grid-template-rows: 1fr auto auto auto auto auto auto auto auto;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "header" "hr2" "texto1" "imagen1" "hr3" "texto2" "imagen2" "hr" "footer2"; }
+    grid-template-areas: "header" "linea" "texto1" "imagen1" "linea2" "texto2" "imagen2" "linea3" "footer2"; }
     .container2 .header nav .navdiv a {
       font-size: 13px; }
       .container2 .header nav .navdiv a .logo {
@@ -596,7 +649,7 @@ h2 {
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "header" "hr2" "formulario" "hr" "footer3"; }
+    grid-template-areas: "header" "linea" "formulario" "linea2" "footer3"; }
     .container3 .header nav .navdiv a {
       font-size: 13px; }
       .container3 .header nav .navdiv a .logo {
@@ -610,7 +663,7 @@ h2 {
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "header" "hr" "anuncio1" "car1" "hr2" "anuncio2" "car2" "hr3" "anuncio3"  "car3" "hr4" "footer2"; }
+    grid-template-areas: "header" "linea" "anuncio1" "car1" "linea2" "anuncio2" "car2" "linea3" "anuncio3"  "car3" "linea4" "footer2"; }
     .container4 .header nav .navdiv a {
       font-size: 13px; }
       .container4 .header nav .navdiv a .logo {
@@ -626,13 +679,15 @@ h2 {
       margin-top: auto; }
       .container4 .car1 .carousel, .container4 .car2 .carousel, .container4 .car3 .carousel {
         width: auto; }
+    .container4 .linea4 {
+      margin-bottom: 15px; }
   .container5 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto auto auto;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "header" "hr2" "formulario2" "hr" "footer2"; }
+    grid-template-areas: "header" "linea" "formulario2" "linea2" "footer2"; }
     .container5 .header nav .navdiv a {
       font-size: 13px; }
       .container5 .header nav .navdiv a .logo {
@@ -646,7 +701,7 @@ h2 {
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: column;
-    grid-template-areas: "header" "hr2" "pregunta1"  "foto1" "hr3" "pregunta2" "foto2"  "hr4" "pregunta3"  "foto3" "hr" "footer2"; }
+    grid-template-areas: "header" "linea" "pregunta1"  "foto1" "linea2" "pregunta2" "foto2"  "linea3" "pregunta3"  "foto3" "linea4" "footer2"; }
     .container6 .header nav .navdiv a {
       font-size: 13px; }
       .container6 .header nav .navdiv a .logo {
@@ -703,7 +758,7 @@ h2 {
     grid-template-rows: 1fr auto auto auto auto auto auto auto auto;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "header" "hr2" "texto1" "imagen1" "hr3" "texto2" "imagen2" "hr" "footer2"; }
+    grid-template-areas: "header" "linea" "texto1" "imagen1" "linea2" "texto2" "imagen2" "linea3" "footer2"; }
     .container2 .header nav .navdiv a {
       font-size: 12px; }
       .container2 .header nav .navdiv a .logo {
@@ -721,7 +776,7 @@ h2 {
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "header" "hr2" "formulario" "hr" "footer3"; }
+    grid-template-areas: "header" "linea" "formulario" "linea2" "footer3"; }
     .container3 .header nav .navdiv a {
       font-size: 12px; }
       .container3 .header nav .navdiv a .logo {
@@ -735,7 +790,7 @@ h2 {
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "header" "hr" "anuncio1" "car1" "hr2" "anuncio2" "car2" "hr3" "anuncio3"  "car3" "hr4" "footer2"; }
+    grid-template-areas: "header" "linea" "anuncio1" "car1" "linea2" "anuncio2" "car2" "linea3" "anuncio3"  "car3" "linea4" "footer2"; }
     .container4 .header nav .navdiv a {
       font-size: 12px; }
       .container4 .header nav .navdiv a .logo {
@@ -751,13 +806,15 @@ h2 {
       margin-top: auto; }
       .container4 .car1 .carousel, .container4 .car2 .carousel, .container4 .car3 .carousel {
         width: auto; }
+    .container4 .linea4 {
+      margin-bottom: 15px; }
   .container5 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto auto auto;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "header" "hr2" "formulario2" "hr" "footer2"; }
+    grid-template-areas: "header" "linea" "formulario2" "linea2" "footer2"; }
     .container5 .header nav .navdiv a {
       font-size: 12px; }
       .container5 .header nav .navdiv a .logo {
@@ -771,7 +828,7 @@ h2 {
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: column;
-    grid-template-areas: "header" "hr2" "pregunta1"  "foto1" "hr3" "pregunta2" "foto2"  "hr4" "pregunta3"  "foto3" "hr" "footer2"; }
+    grid-template-areas: "header" "linea" "pregunta1"  "foto1" "linea2" "pregunta2" "foto2"  "linea3" "pregunta3"  "foto3" "linea4" "footer2"; }
     .container6 .header nav .navdiv a {
       font-size: 12px; }
       .container6 .header nav .navdiv a .logo {
