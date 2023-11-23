@@ -1,0 +1,74 @@
+  
+  //Contacto
+   
+   .container3 {  
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    background-color:$fondo;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.6fr auto 2.5fr auto 0.6fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "linea linea"
+      "formulario formulario"
+      "linea2 linea2"
+      "footer3 footer3";
+      .header{
+        grid-area: header;
+        .navdiv{
+            a{
+                .logo{
+                    width: 100px;
+                    opacity: 0.7;
+                    transition: all 0.4s;
+                    &:hover{
+                         opacity: 1;
+                         transform: scale(1.1,1.1);
+                    }
+                }
+               
+            }
+            .hover{
+                transition: all 0.4s;
+            }
+            .hover:hover{
+                background-color: $menu;
+                transform: scale(1.2,1.2);
+            }
+        }
+     } 
+      .formulario { grid-area: formulario;
+        text-align: center;
+        margin: 0 auto;
+        form{
+            padding: 20px;
+            .input{
+                padding: 15px;
+            }
+            .boton{
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+    }
+    .linea{
+        grid-area: linea;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .linea2{
+        grid-area: linea2;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+      .footer3{
+        grid-area: footer3;
+        margin: 0;
+      }
+  }

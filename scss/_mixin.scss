@@ -1,0 +1,11 @@
+
+//mixin
+
+@mixin fondo-de-texto($color) {
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    p{
+        background-color: $bgtexto;
+    }
+}

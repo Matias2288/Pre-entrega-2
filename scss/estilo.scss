@@ -1,677 +1,30 @@
+//imports
 @import "variables";
+@import "mixin";
+@import "body";
+@import "home";
+@import "about";
+@import "contacto";
+@import "productos";
+@import "compra";
+@import "preguntas";
+@import "tipografia";
+@import "linea";
+@import "footer";
 
-@mixin fondo-de-texto($color) {
-    border-radius: 5px;
-    padding: 1rem;
-    margin: 1rem;
-    p{
-        background-color: $bgtexto;
-    }
-}
 
+//reseteo
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-image: url(../Fotos/background2.jpg);
-    margin: auto;
-    background-repeat:round;
-}
-//Pagina de inicio
-.container1{
-    margin: 0 auto;
-    width: 90%;
-    display: grid;
-    background-color:$fondo;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr auto auto auto;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "header header"
-      "carousel carousel"
-      "article article"
-      "footer footer";
-    .header{
-            grid-area: header;
-            header{
-             nav{
-                .navdiv{
-                    a{
-                        .logo{
-                            width: 100px;
-                            opacity: 0.7;
-                            transition: all 0.4s;
-                            &:hover{
-                                 opacity: 1;
-                                 transform: scale(1.1,1.1);
-                            }
-                        }
-                       
-                    }
-                    .hover{
-                        transition: all 0.4s;
-                    }
-                    .hover:hover{
-                        background-color: $menu;
-                        transform: scale(1.2,1.2);
-                    }
-                }
-             } 
-            }
-    }
-    .article{
-        grid-area: article;
-        font-family: 'Roboto Slab', serif; 
-        @include fondo-de-texto($bgtexto);
-    }
-    .carousel{
-        grid-area: carousel;
-        padding: 5px;
-        margin: 0 auto;
-    }
-}
-.footer{
-    grid-area: footer;
-    width: 90%;
-    margin: 0 auto;
-    background-color:rgba(248, 236, 220, 0.795);
-    .h2f{
-        font-family: 'Rosarivo', serif;
-    }
-    
-}
-//Linea de todas las paginas
-.linea, .linea2, .linea3, .linea4{
-    border-top: 1px solid $menu;
-    height: 1px;
-    margin: auto;
-    margin-bottom: 5px;
-  }
-//Footer de todas las paginas
-footer{
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
-    .h2f{
-        font-family: 'Rosarivo', serif;
-    }
-    .instagram{
-        inline-size: 90px;
-        opacity: 0.6;
-        transition: all 0.6s;
-    }
-    .instagram:hover{
-        opacity: 1;
-        transform: scale(1.2, 1.2);
-    }
-    .facebook{
-        inline-size: 75px;
-        opacity: 0.6;
-        transition: all 0.6s;
-    }
-    .facebook:hover{
-        opacity: 1;
-        transform: scale(1.2, 1.2);
-    }
-    .tiktok{
-        inline-size: 88px;
-        opacity: 0.6;
-        transition: all 0.6s;
-    }
-    .tiktok:hover{
-        opacity: 1;
-        transform: scale(1.2, 1.2);
-    }
-}
-.titulo{
-    font-family: 'Rosarivo', cursive;
-    margin-top: 45px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 45px;
- }  
- .subtitulo{
-    font-style: italic;
-    padding: 10px;
-    font-family: 'Bungee Spice', cursive;
-    text-align: right;
- }
- .parrafo1{
-    width: 90%;
-    margin: 0px auto;
-    padding: 10px;
-    text-align: justify;
-    text-justify: auto;
-    font-size: 2vh;
-}
-h1{
-    color: rgb(48, 48, 48);
-    margin-top: 25px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 45px;
-    font-family: 'Rosarivo', serif;
-}
-h2{
-    font-weight: normal;
-    font-family: 'Rosarivo', serif;
-}
-//Sobre Nosotros
-.container2 { 
-    margin: 0 auto;
-    width: 90%;
-    display: grid;
-    background-color:$fondo;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr auto auto auto auto auto 0.5fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "header header"
-      "linea linea"
-      "texto1 imagen1"
-      "linea2 linea2"
-      "imagen2 texto2"
-      "linea3 linea3"
-      "footer2 footer2";
-      .header{
-        grid-area: header;
-        .navdiv{
-            a{
-                .logo{
-                    width: 100px;
-                    opacity: 0.7;
-                    transition: all 0.4s;
-                    &:hover{
-                         opacity: 1;
-                         transform: scale(1.1,1.1);
-                    }
-                }
-               
-            }
-            .hover{
-                transition: all 0.4s;
-            }
-            .hover:hover{
-                background-color: $menu;
-                transform: scale(1.2,1.2);
-            }
-        }
-     } 
-     .texto1{
-        grid-area: texto1;
-        font-family: 'Roboto Slab', serif;
-        font-weight:400;
-        @include fondo-de-texto($bgtexto);
-        margin: auto;
-        margin-top: 25px;
-     }
-     .imagen1 { 
-        grid-area: imagen1;
-        padding: 20px;
-        align-items: center; 
-        text-align: center; 
-        .img{
-            width: 700px;
-        }
-    }
 
-    .texto2{
-        grid-area: texto2;
-        @include fondo-de-texto($bgtexto);
-        font-family: 'Roboto Slab', serif;
-        font-weight:400;
-        margin: auto;
-        margin-top: 25px;
-    }
-    .imagen2 { 
-        grid-area: imagen2;
-        padding: 20px;
-        margin-bottom: 50px;
-        align-items: center;
-        text-align: center;
-        .img{
-            width: 700px;
-        }     
-    }
-    .linea{
-        grid-area: linea;
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .linea2{
-        grid-area: linea2;
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .linea3{
-        grid-area: linea3;
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 15px;    
-    }
-      .footer2 { 
-        grid-area: footer2;
-        margin: 0;
-    }
+/*---------------------------------------------------Responsive---------------------------------------------------*/
 
-    }
-    .subtitulo2{
-        font-style: italic;
-        padding: 10px;
-        text-align: center;
-        font-family: 'Bungee Spice', cursive;
-    }
-    //Contacto
-    .container3 {  
-        margin: 0 auto;
-        width: 90%;
-        display: grid;
-        background-color:$fondo;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.6fr auto 2.5fr auto 0.6fr;
-        grid-auto-columns: 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "header header"
-          "linea linea"
-          "formulario formulario"
-          "linea2 linea2"
-          "footer3 footer3";
-          .header{
-            grid-area: header;
-            .navdiv{
-                a{
-                    .logo{
-                        width: 100px;
-                        opacity: 0.7;
-                        transition: all 0.4s;
-                        &:hover{
-                             opacity: 1;
-                             transform: scale(1.1,1.1);
-                        }
-                    }
-                   
-                }
-                .hover{
-                    transition: all 0.4s;
-                }
-                .hover:hover{
-                    background-color: $menu;
-                    transform: scale(1.2,1.2);
-                }
-            }
-         } 
-          .formulario { grid-area: formulario;
-            text-align: center;
-            margin: 0 auto;
-            form{
-                padding: 20px;
-                .input{
-                    padding: 15px;
-                }
-                .boton{
-                    display: flex;
-                    justify-content: space-evenly;
-                }
-            }
-        }
-        .linea{
-            grid-area: linea;
-            width: 100%;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .linea2{
-            grid-area: linea2;
-            width: 100%;
-            margin-top: 10px;
-            margin-bottom: 15px;
-        }
-          .footer3{
-            grid-area: footer3;
-            margin: 0;
-          }
-      }
-      //Productos
-      .container4 {
-        margin: 0 auto;
-        width: 90%;
-        display: grid;
-        background-color:$fondo;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr auto auto auto auto auto auto 0.5fr;
-        grid-auto-columns: 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "header header"
-          "linea linea"
-          "anuncio1 car1"
-          "linea2 linea2"
-          "anuncio2 car2"
-          "linea3 linea3"
-          "anuncio3 car3"
-          "linea4 linea4"
-          "footer2 footer2";
-          .header{
-            grid-area: header;
-            .navdiv{
-                a{
-                    .logo{
-                        width: 100px;
-                        opacity: 0.7;
-                        transition: all 0.4s;
-                        &:hover{
-                             opacity: 1;
-                             transform: scale(1.1,1.1);
-                        }
-                    }
-                   
-                }
-                .hover{
-                    transition: all 0.4s;
-                }
-                .hover:hover{
-                    background-color: $menu;
-                    transform: scale(1.2,1.2);
-                }
-            }
-         } 
-         .anuncio1 {
-            grid-area: anuncio1;
-            font-family: 'Roboto Slab', serif;
-            @include fondo-de-texto($bgtexto);
-            font-weight:400;
-            margin: auto;
-            margin-top: 25px;
-            padding: 25px;
-            .comprar{
-                text-align: right;
-                padding: 20px;
-            
-            }
-        }
-        .anuncio2 {
-            grid-area: anuncio2;
-            font-family: 'Roboto Slab', serif;
-            @include fondo-de-texto($bgtexto);
-            font-weight:400;
-            margin: auto;
-            margin-top: 25px;
-            padding: 25px;
-            .comprar{
-                text-align: right;
-                padding: 20px;
-            }
-        }
-        .anuncio3 { 
-            grid-area: anuncio3;
-            font-family: 'Roboto Slab', serif;
-            @include fondo-de-texto($bgtexto);
-            font-weight:400;
-            margin: auto;
-            margin-top: 25px;
-            padding: 25px;
-            .comprar{
-                text-align: right;
-                padding: 20px;
-            
-            }
-        }
-        .car1 { 
-            grid-area: car1;
-            padding: 45px;
-            align-items: center;
-            margin-top: 50px;
-            .carousel { 
-                margin: 0 auto;
-            }
-        }
-        .car2 { 
-            grid-area: car2;
-            align-items: center;
-            padding: 40px;
-            margin-top: 50px;
-            .carousel { 
-                margin: 0 auto;
-            }
-        }
-        .car3 { 
-            grid-area: car3;
-            align-items: center;
-            padding: 38px;
-            margin-top: 50px;
-            .carousel { 
-                margin: 0 auto;
-            }
-        }
-        .linea{
-            grid-area: linea;
-            width: 100%;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .linea2{
-            grid-area: linea2;
-            width: 100%;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .linea3{
-            grid-area: linea3;
-            width: 100%;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .linea4{
-            grid-area: linea4;
-            width: 100%;
-            margin-top: 10px;
-            margin-bottom: 1px;    
-        }
-          .footer2 { 
-            grid-area: footer2;
-            margin: 0;
-        }
-      }
-      //Pagina de compra
-      .container5 {  
-        margin: 0 auto;
-        width: 90%;
-        display: grid;
-        background-color:$fondo;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr auto 2.5fr auto 0.5fr;
-        grid-auto-columns: 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "header header"
-          "linea linea"
-          "formulario2 formulario2"
-          "linea2 linea2"
-          "footer2 footer2";
-          .header{
-            grid-area: header;
-            .navdiv{
-                a{
-                    .logo{
-                        width: 100px;
-                        opacity: 0.7;
-                        transition: all 0.4s;
-                        &:hover{
-                             opacity: 1;
-                             transform: scale(1.1,1.1);
-                        }
-                    }
-                   
-                }
-                .hover{
-                    transition: all 0.4s;
-                }
-                .hover:hover{
-                    background-color: $menu;
-                    transform: scale(1.2,1.2);
-                }
-            }
-         } 
-         .formulario2{
-            grid-area: formulario2;
-            padding: 20px;
-            margin: 0 auto;
-        }
-        .linea{
-            grid-area: linea;
-            width: 100%;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .linea2{
-            grid-area: linea2;
-            width: 100%;
-            margin-top: 10px;
-            margin-bottom: 15px;    
-        }
-          .footer2 { 
-            grid-area: footer2;
-            margin: 0;
-        }
-      }
-      //Preguntas Frecuentes
-      .container6 {
-        margin: 0 auto;
-        width: 90%;  
-        display: grid;
-        background-color:$fondo;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr auto auto auto auto auto auto auto 0.5fr;
-        grid-auto-columns: 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "header header"
-          "linea linea"
-          "pregunta1 foto1"
-          "linea2 linea2"
-          "foto2 pregunta2"
-          "linea3 linea3"
-          "pregunta3 foto3"
-          "linea4 linea4"
-          "footer2 footer2";
-          .header{
-            grid-area: header;
-            .navdiv{
-                a{
-                    .logo{
-                        width: 100px;
-                        opacity: 0.7;
-                        transition: all 0.4s;
-                        &:hover{
-                             opacity: 1;
-                             transform: scale(1.1,1.1);
-                        }
-                    }
-                   
-                }
-                .hover{
-                    transition: all 0.4s;
-                }
-                .hover:hover{
-                    background-color: $menu;
-                    transform: scale(1.2,1.2);
-                }
-            }
-         } 
-          .pregunta1 { 
-            grid-area: pregunta1;
-            @include fondo-de-texto($bgtexto);
-            font-family: 'Roboto Slab', serif;
-            margin: auto;
-            font-weight:400;
-          }
-          .foto1 { 
-            grid-area: foto1;
-            padding: 25px;
-            align-items: center; 
-            text-align: center; 
-            margin-top: 75px;
-            .pregunta-img{
-                width: 450px;
-              }
-          }
-          .foto2 { 
-            grid-area: foto2;
-            padding: 25px;
-            align-items: center; 
-            text-align: center; 
-            margin-top: 65px;
-            .pregunta-img2{
-                width: 600px;
-              }
-          }
-          .pregunta2 { grid-area: pregunta2;
-            font-family: 'Roboto Slab', serif;
-            @include fondo-de-texto($bgtexto);
-            margin: auto;
-            font-weight:400;
-           }
-           .pregunta3 { 
-            grid-area: pregunta3;
-            @include fondo-de-texto($bgtexto);
-            font-family: 'Roboto Slab', serif;
-            margin: auto;
-            font-weight:400;
-          }
-          .foto3 { 
-            grid-area: foto3;
-            padding: 25px;
-            align-items: center; 
-            text-align: center; 
-            margin-top: 68px;
-            .pregunta-img{
-                width: 450px;
-              }
-          }
-          .linea{
-            grid-area: linea;
-            width: 100%;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .linea2{
-            grid-area: linea2;
-            width: 100%;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .linea3{
-            grid-area: linea3;
-            width: 100%;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .linea4{
-            grid-area: linea4;
-            width: 100%;
-            margin-top: 10px;
-            margin-bottom: 15px;    
-        }
-          .footer2 { 
-            grid-area: footer2;
-            margin: 0;
-        }
-        
-      }
-      @media screen and (min-width:768px) and (max-width:1600px){
+ //Tablet 1
+
+     @media screen and (min-width:768px) and (max-width:1600px){
         //Pagina de inicio
         .container1 { 
             grid-template-columns: 1fr;
@@ -750,6 +103,8 @@ h2{
                 padding: 10px;
               }
             .imagen1, .imagen2{
+                margin-top: auto;
+                margin-bottom: auto;
                 .img{
                     width: 500px;
                 }
@@ -758,7 +113,7 @@ h2{
           //Contacto
           .container3 {  
             grid-template-columns: 1fr;
-            grid-template-rows: 0.5fr auto auto auto 0.5fr;
+            grid-template-rows: auto auto auto auto auto;
             grid-auto-columns: 1fr;
             gap: 0px 0px;
             grid-auto-flow: row;
@@ -837,6 +192,9 @@ h2{
           }
           .linea4{
             margin-bottom: 15px;
+          }
+          .footer2{
+            margin-top: auto;
           }
           }
           //Pagina de compra
@@ -924,6 +282,9 @@ h2{
             }
           }
       }
+
+    //Tablet 2
+
       @media screen and (min-width:500px) and (max-width:768px){
         //Pagina de inicio
         .container1 { 
@@ -1018,6 +379,8 @@ h2{
                 padding: 5px;
               }
             .imagen1, .imagen2{
+                margin-top: auto;
+                margin-bottom: auto;
                 .img{
                     width: 350px;
                 }
@@ -1026,7 +389,7 @@ h2{
           //Contacto
           .container3 {  
             grid-template-columns: 1fr;
-            grid-template-rows: 0.5fr auto auto auto 0.5fr;
+            grid-template-rows: auto auto auto auto auto;
             grid-auto-columns: 1fr;
             gap: 0px 0px;
             grid-auto-flow: row;
@@ -1105,6 +468,9 @@ h2{
           }
           .linea4{
             margin-bottom: 15px;
+          }
+          .footer2{
+            margin-top: auto;
           }
           }
           //Pagina de compra
@@ -1192,6 +558,9 @@ h2{
             }
           }
       }
+
+    //Celular
+
       @media screen and (min-width:320px) and (max-width:500px){
         //Pagina de inicio
         .container1 { 
@@ -1288,15 +657,18 @@ h2{
                 padding: 5px;
               }
             .imagen1, .imagen2{
+                margin-top: auto;
+                margin-bottom: auto;
                 .img{
                     width: 250px;
                 }
             }
+
           }
           //Contacto
           .container3 {  
             grid-template-columns: 1fr;
-            grid-template-rows: 0.6fr 0.3fr auto 0.3fr 0.6fr;
+            grid-template-rows: 0.5fr auto auto auto 0.5fr;
             grid-auto-columns: 1fr;
             gap: 0px 0px;
             grid-auto-flow: row;
@@ -1323,6 +695,9 @@ h2{
                    }
                 } 
            } 
+           .footer3{
+            margin-top: auto;
+           }
           }
           //Productos
           .container4 {
@@ -1375,6 +750,9 @@ h2{
           }
           .linea4{
             margin-bottom: 15px;
+          }
+          .footer2{
+            margin-top: auto;
           }
           }
           //Pagina de compra

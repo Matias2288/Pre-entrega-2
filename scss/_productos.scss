@@ -1,0 +1,145 @@
+@import "mixin";
+
+   //Productos
+   .container4 {
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    background-color:$fondo;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr auto auto auto auto auto auto 0.5fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "linea linea"
+      "anuncio1 car1"
+      "linea2 linea2"
+      "anuncio2 car2"
+      "linea3 linea3"
+      "anuncio3 car3"
+      "linea4 linea4"
+      "footer2 footer2";
+      .header{
+        grid-area: header;
+        .navdiv{
+            a{
+                .logo{
+                    width: 100px;
+                    opacity: 0.7;
+                    transition: all 0.4s;
+                    &:hover{
+                         opacity: 1;
+                         transform: scale(1.1,1.1);
+                    }
+                }
+               
+            }
+            .hover{
+                transition: all 0.4s;
+            }
+            .hover:hover{
+                background-color: $menu;
+                transform: scale(1.2,1.2);
+            }
+        }
+     } 
+     .anuncio1 {
+        grid-area: anuncio1;
+        font-family: 'Roboto Slab', serif;
+        @include fondo-de-texto($bgtexto);
+        font-weight:400;
+        margin: auto;
+        margin-top: 25px;
+        padding: 25px;
+        .comprar{
+            text-align: right;
+            padding: 20px;
+        
+        }
+    }
+    .anuncio2 {
+        grid-area: anuncio2;
+        font-family: 'Roboto Slab', serif;
+        @include fondo-de-texto($bgtexto);
+        font-weight:400;
+        margin: auto;
+        margin-top: 25px;
+        padding: 25px;
+        .comprar{
+            text-align: right;
+            padding: 20px;
+        }
+    }
+    .anuncio3 { 
+        grid-area: anuncio3;
+        font-family: 'Roboto Slab', serif;
+        @include fondo-de-texto($bgtexto);
+        font-weight:400;
+        margin: auto;
+        margin-top: 25px;
+        padding: 25px;
+        .comprar{
+            text-align: right;
+            padding: 20px;
+        
+        }
+    }
+    .car1 { 
+        grid-area: car1;
+        padding: 45px;
+        align-items: center;
+        margin-top: 50px;
+        .carousel { 
+            margin: 0 auto;
+        }
+    }
+    .car2 { 
+        grid-area: car2;
+        align-items: center;
+        padding: 40px;
+        margin-top: 50px;
+        .carousel { 
+            margin: 0 auto;
+        }
+    }
+    .car3 { 
+        grid-area: car3;
+        align-items: center;
+        padding: 38px;
+        margin-top: 50px;
+        .carousel { 
+            margin: 0 auto;
+        }
+    }
+    .linea{
+        grid-area: linea;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .linea2{
+        grid-area: linea2;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .linea3{
+        grid-area: linea3;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .linea4{
+        grid-area: linea4;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: auto;    
+    }
+      .footer2 { 
+        grid-area: footer2;
+        margin: 0;
+        margin-top: -30px;
+    }
+  }

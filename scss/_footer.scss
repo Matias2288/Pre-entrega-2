@@ -1,0 +1,48 @@
+//Footer del Home
+.footer{
+    grid-area: footer;
+    width: 90%;
+    margin: 0 auto;
+    background-color:$fondo;
+    .h2f{
+        font-family: 'Rosarivo', serif;
+    }
+    
+}
+
+//Footer de todas las paginas
+footer{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    .h2f{
+        font-family: 'Rosarivo', serif;
+    }
+    .instagram{
+        inline-size: 90px;
+        opacity: 0.6;
+        transition: all 0.6s;
+    }
+    .instagram:hover{
+        opacity: 1;
+        transform: scale(1.2, 1.2);
+    }
+    .facebook{
+        inline-size: 75px;
+        opacity: 0.6;
+        transition: all 0.6s;
+    }
+    .facebook:hover{
+        opacity: 1;
+        transform: scale(1.2, 1.2);
+    }
+    .tiktok{
+        inline-size: 88px;
+        opacity: 0.6;
+        transition: all 0.6s;
+    }
+    .tiktok:hover{
+        opacity: 1;
+        transform: scale(1.2, 1.2);
+    }
+}

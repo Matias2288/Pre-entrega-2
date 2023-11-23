@@ -1,0 +1,42 @@
+
+//Tipografia de la pagina
+
+.titulo{
+    font-family: 'Rosarivo', cursive;
+    margin-top: 45px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+ }  
+ .subtitulo{
+    font-style: italic;
+    padding: 10px;
+    font-family: 'Bungee Spice', cursive;
+    text-align: right;
+ }
+ .subtitulo2{
+    font-style: italic;
+    padding: 10px;
+    font-family: 'Bungee Spice', cursive;
+    text-align: center;
+}
+ .parrafo1{
+    width: 90%;
+    margin: 0px auto;
+    padding: 10px;
+    text-align: justify;
+    text-justify: auto;
+    font-size: 2vh;
+}
+h1{
+    color: rgb(48, 48, 48);
+    margin-top: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    font-family: 'Rosarivo', serif;
+}
+h2{
+    font-weight: normal;
+    font-family: 'Rosarivo', serif;
+}

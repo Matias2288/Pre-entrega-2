@@ -1,0 +1,58 @@
+@import "mixin";
+
+//Pagina de inicio
+
+.container1{
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    background-color:$fondo;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto auto auto;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "carousel carousel"
+      "article article"
+      "footer footer";
+    .header{
+            grid-area: header;
+            header{
+             nav{
+                .navdiv{
+                    a{
+                        .logo{
+                            width: 100px;
+                            opacity: 0.7;
+                            transition: all 0.4s;
+                            &:hover{
+                                 opacity: 1;
+                                 transform: scale(1.1,1.1);
+                            }
+                        }
+                       
+                    }
+                    .hover{
+                        transition: all 0.4s;
+                    }
+                    .hover:hover{
+                        background-color: $menu;
+                        transform: scale(1.2,1.2);
+                    }
+                }
+             } 
+            }
+    }
+    .article{
+        grid-area: article;
+        font-family: 'Roboto Slab', serif; 
+        @include fondo-de-texto($bgtexto);
+    }
+    .carousel{
+        grid-area: carousel;
+        padding: 5px;
+        margin: 0 auto;
+    }
+}

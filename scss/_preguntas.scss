@@ -1,0 +1,128 @@
+@import "mixin";
+
+     //Preguntas Frecuentes
+     
+     .container6 {
+        margin: 0 auto;
+        width: 90%;  
+        display: grid;
+        background-color:$fondo;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr auto auto auto auto auto auto auto 0.5fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "header header"
+          "linea linea"
+          "pregunta1 foto1"
+          "linea2 linea2"
+          "foto2 pregunta2"
+          "linea3 linea3"
+          "pregunta3 foto3"
+          "linea4 linea4"
+          "footer2 footer2";
+          .header{
+            grid-area: header;
+            .navdiv{
+                a{
+                    .logo{
+                        width: 100px;
+                        opacity: 0.7;
+                        transition: all 0.4s;
+                        &:hover{
+                             opacity: 1;
+                             transform: scale(1.1,1.1);
+                        }
+                    }
+                   
+                }
+                .hover{
+                    transition: all 0.4s;
+                }
+                .hover:hover{
+                    background-color: $menu;
+                    transform: scale(1.2,1.2);
+                }
+            }
+         } 
+          .pregunta1 { 
+            grid-area: pregunta1;
+            @include fondo-de-texto($bgtexto);
+            font-family: 'Roboto Slab', serif;
+            margin: auto;
+            font-weight:400;
+          }
+          .foto1 { 
+            grid-area: foto1;
+            padding: 25px;
+            align-items: center; 
+            text-align: center; 
+            margin-top: 75px;
+            .pregunta-img{
+                width: 450px;
+              }
+          }
+          .foto2 { 
+            grid-area: foto2;
+            padding: 25px;
+            align-items: center; 
+            text-align: center; 
+            margin-top: 65px;
+            .pregunta-img2{
+                width: 600px;
+              }
+          }
+          .pregunta2 { grid-area: pregunta2;
+            font-family: 'Roboto Slab', serif;
+            @include fondo-de-texto($bgtexto);
+            margin: auto;
+            font-weight:400;
+           }
+           .pregunta3 { 
+            grid-area: pregunta3;
+            @include fondo-de-texto($bgtexto);
+            font-family: 'Roboto Slab', serif;
+            margin: auto;
+            font-weight:400;
+          }
+          .foto3 { 
+            grid-area: foto3;
+            padding: 25px;
+            align-items: center; 
+            text-align: center; 
+            margin-top: 68px;
+            .pregunta-img{
+                width: 450px;
+              }
+          }
+          .linea{
+            grid-area: linea;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .linea2{
+            grid-area: linea2;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .linea3{
+            grid-area: linea3;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .linea4{
+            grid-area: linea4;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 15px;    
+        }
+          .footer2 { 
+            grid-area: footer2;
+            margin: 0;
+        }
+        
+      }

@@ -1,0 +1,108 @@
+@import "mixin";
+
+//Sobre Nosotros
+
+.container2 { 
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    background-color:$fondo;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto auto auto auto auto 0.5fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "linea linea"
+      "texto1 imagen1"
+      "linea2 linea2"
+      "imagen2 texto2"
+      "linea3 linea3"
+      "footer2 footer2";
+      .header{
+        grid-area: header;
+        .navdiv{
+            a{
+                .logo{
+                    width: 100px;
+                    opacity: 0.7;
+                    transition: all 0.4s;
+                    &:hover{
+                         opacity: 1;
+                         transform: scale(1.1,1.1);
+                    }
+                }
+               
+            }
+            .hover{
+                transition: all 0.4s;
+            }
+            .hover:hover{
+                background-color: $menu;
+                transform: scale(1.2,1.2);
+            }
+        }
+     } 
+     .texto1{
+        grid-area: texto1;
+        font-family: 'Roboto Slab', serif;
+        font-weight:400;
+        @include fondo-de-texto($bgtexto);
+        margin: auto;
+        margin-top: 25px;
+     }
+     .imagen1 { 
+        grid-area: imagen1;
+        padding: 20px;
+        align-items: center; 
+        text-align: center; 
+        margin-top: 55px;
+        .img{
+            width: 700px;
+        }
+    }
+
+    .texto2{
+        grid-area: texto2;
+        @include fondo-de-texto($bgtexto);
+        font-family: 'Roboto Slab', serif;
+        font-weight:400;
+        margin: auto;
+        margin-top: 25px;
+    }
+    .imagen2 { 
+        grid-area: imagen2;
+        padding: 20px;
+        margin-bottom: 55px;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        .img{
+            width: 700px;
+        }     
+    }
+    .linea{
+        grid-area: linea;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .linea2{
+        grid-area: linea2;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .linea3{
+        grid-area: linea3;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 8px;    
+    }
+      .footer2 { 
+        grid-area: footer2;
+        margin: 0;
+    }
+
+    }

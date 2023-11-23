@@ -1,12 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
 body {
   background-image: url(../Fotos/background2.jpg);
   margin: auto;
-  background-repeat: round; }
+  background-repeat: repeat; }
 
 .container1 {
   margin: 0 auto;
@@ -45,81 +40,6 @@ body {
     grid-area: carousel;
     padding: 5px;
     margin: 0 auto; }
-
-.footer {
-  grid-area: footer;
-  width: 90%;
-  margin: 0 auto;
-  background-color: rgba(248, 236, 220, 0.795); }
-  .footer .h2f {
-    font-family: 'Rosarivo', serif; }
-
-.linea, .linea2, .linea3, .linea4 {
-  border-top: 1px solid #56058b;
-  height: 1px;
-  margin: auto;
-  margin-bottom: 5px; }
-
-footer {
-  align-items: center;
-  display: flex;
-  justify-content: space-evenly; }
-  footer .h2f {
-    font-family: 'Rosarivo', serif; }
-  footer .instagram {
-    inline-size: 90px;
-    opacity: 0.6;
-    transition: all 0.6s; }
-  footer .instagram:hover {
-    opacity: 1;
-    transform: scale(1.2, 1.2); }
-  footer .facebook {
-    inline-size: 75px;
-    opacity: 0.6;
-    transition: all 0.6s; }
-  footer .facebook:hover {
-    opacity: 1;
-    transform: scale(1.2, 1.2); }
-  footer .tiktok {
-    inline-size: 88px;
-    opacity: 0.6;
-    transition: all 0.6s; }
-  footer .tiktok:hover {
-    opacity: 1;
-    transform: scale(1.2, 1.2); }
-
-.titulo {
-  font-family: 'Rosarivo', cursive;
-  margin-top: 45px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 45px; }
-
-.subtitulo {
-  font-style: italic;
-  padding: 10px;
-  font-family: 'Bungee Spice', cursive;
-  text-align: right; }
-
-.parrafo1 {
-  width: 90%;
-  margin: 0px auto;
-  padding: 10px;
-  text-align: justify;
-  text-justify: auto;
-  font-size: 2vh; }
-
-h1 {
-  color: #303030;
-  margin-top: 25px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 45px;
-  font-family: 'Rosarivo', serif; }
-
-h2 {
-  font-weight: normal;
-  font-family: 'Rosarivo', serif; }
 
 .container2 {
   margin: 0 auto;
@@ -161,7 +81,8 @@ h2 {
     grid-area: imagen1;
     padding: 20px;
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    margin-top: 55px; }
     .container2 .imagen1 .img {
       width: 700px; }
   .container2 .texto2 {
@@ -178,9 +99,10 @@ h2 {
   .container2 .imagen2 {
     grid-area: imagen2;
     padding: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    margin-top: 50px; }
     .container2 .imagen2 .img {
       width: 700px; }
   .container2 .linea {
@@ -197,16 +119,10 @@ h2 {
     grid-area: linea3;
     width: 100%;
     margin-top: 10px;
-    margin-bottom: 15px; }
+    margin-bottom: 8px; }
   .container2 .footer2 {
     grid-area: footer2;
     margin: 0; }
-
-.subtitulo2 {
-  font-style: italic;
-  padding: 10px;
-  text-align: center;
-  font-family: 'Bungee Spice', cursive; }
 
 .container3 {
   margin: 0 auto;
@@ -368,10 +284,11 @@ h2 {
     grid-area: linea4;
     width: 100%;
     margin-top: 10px;
-    margin-bottom: 1px; }
+    margin-bottom: auto; }
   .container4 .footer2 {
     grid-area: footer2;
-    margin: 0; }
+    margin: 0;
+    margin-top: -30px; }
 
 .container5 {
   margin: 0 auto;
@@ -379,7 +296,7 @@ h2 {
   display: grid;
   background-color: #f8ecdccb;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr auto 2.5fr auto 0.5fr;
+  grid-template-rows: 0.5fr auto 2.6fr auto 0.5fr;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -519,6 +436,93 @@ h2 {
     grid-area: footer2;
     margin: 0; }
 
+.titulo {
+  font-family: 'Rosarivo', cursive;
+  margin-top: 45px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 45px; }
+
+.subtitulo {
+  font-style: italic;
+  padding: 10px;
+  font-family: 'Bungee Spice', cursive;
+  text-align: right; }
+
+.subtitulo2 {
+  font-style: italic;
+  padding: 10px;
+  font-family: 'Bungee Spice', cursive;
+  text-align: center; }
+
+.parrafo1 {
+  width: 90%;
+  margin: 0px auto;
+  padding: 10px;
+  text-align: justify;
+  text-justify: auto;
+  font-size: 2vh; }
+
+h1 {
+  color: #303030;
+  margin-top: 25px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 45px;
+  font-family: 'Rosarivo', serif; }
+
+h2 {
+  font-weight: normal;
+  font-family: 'Rosarivo', serif; }
+
+.linea, .linea2, .linea3, .linea4 {
+  border-top: 1px solid #56058b;
+  height: 1px;
+  margin: auto;
+  margin-bottom: 5px; }
+
+.footer {
+  grid-area: footer;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #f8ecdccb; }
+  .footer .h2f {
+    font-family: 'Rosarivo', serif; }
+
+footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly; }
+  footer .h2f {
+    font-family: 'Rosarivo', serif; }
+  footer .instagram {
+    inline-size: 90px;
+    opacity: 0.6;
+    transition: all 0.6s; }
+  footer .instagram:hover {
+    opacity: 1;
+    transform: scale(1.2, 1.2); }
+  footer .facebook {
+    inline-size: 75px;
+    opacity: 0.6;
+    transition: all 0.6s; }
+  footer .facebook:hover {
+    opacity: 1;
+    transform: scale(1.2, 1.2); }
+  footer .tiktok {
+    inline-size: 88px;
+    opacity: 0.6;
+    transition: all 0.6s; }
+  footer .tiktok:hover {
+    opacity: 1;
+    transform: scale(1.2, 1.2); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*---------------------------------------------------Responsive---------------------------------------------------*/
 @media screen and (min-width: 768px) and (max-width: 1600px) {
   .container1 {
     grid-template-columns: 1fr;
@@ -555,11 +559,14 @@ h2 {
       padding: 10px; }
     .container2 .texto1, .container2 .texto2 {
       padding: 10px; }
-    .container2 .imagen1 .img, .container2 .imagen2 .img {
-      width: 500px; }
+    .container2 .imagen1, .container2 .imagen2 {
+      margin-top: auto;
+      margin-bottom: auto; }
+      .container2 .imagen1 .img, .container2 .imagen2 .img {
+        width: 500px; }
   .container3 {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr auto auto auto 0.5fr;
+    grid-template-rows: auto auto auto auto auto;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -595,6 +602,8 @@ h2 {
         width: auto; }
     .container4 .linea4 {
       margin-bottom: 15px; }
+    .container4 .footer2 {
+      margin-top: auto; }
   .container5 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto auto auto;
@@ -680,11 +689,14 @@ h2 {
       padding: 10px; }
     .container2 .texto1, .container2 .texto2 {
       padding: 5px; }
-    .container2 .imagen1 .img, .container2 .imagen2 .img {
-      width: 350px; }
+    .container2 .imagen1, .container2 .imagen2 {
+      margin-top: auto;
+      margin-bottom: auto; }
+      .container2 .imagen1 .img, .container2 .imagen2 .img {
+        width: 350px; }
   .container3 {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr auto auto auto 0.5fr;
+    grid-template-rows: auto auto auto auto auto;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -720,6 +732,8 @@ h2 {
         width: auto; }
     .container4 .linea4 {
       margin-bottom: 15px; }
+    .container4 .footer2 {
+      margin-top: auto; }
   .container5 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto auto auto;
@@ -807,11 +821,14 @@ h2 {
       padding: 10px; }
     .container2 .texto1, .container2 .texto2 {
       padding: 5px; }
-    .container2 .imagen1 .img, .container2 .imagen2 .img {
-      width: 250px; }
+    .container2 .imagen1, .container2 .imagen2 {
+      margin-top: auto;
+      margin-bottom: auto; }
+      .container2 .imagen1 .img, .container2 .imagen2 .img {
+        width: 250px; }
   .container3 {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.6fr 0.3fr auto 0.3fr 0.6fr;
+    grid-template-rows: 0.5fr auto auto auto 0.5fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -823,6 +840,8 @@ h2 {
     .container3 .header nav .navdiv .hover:hover {
       transform: scale(1.1, 1.1);
       padding: 10px; }
+    .container3 .footer3 {
+      margin-top: auto; }
   .container4 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto auto auto auto auto auto auto auto auto auto;
@@ -847,6 +866,8 @@ h2 {
         width: auto; }
     .container4 .linea4 {
       margin-bottom: 15px; }
+    .container4 .footer2 {
+      margin-top: auto; }
   .container5 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto auto auto;
