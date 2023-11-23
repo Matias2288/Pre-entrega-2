@@ -35,7 +35,12 @@ body {
       transform: scale(1.2, 1.2); }
   .container1 .article {
     grid-area: article;
-    font-family: 'Roboto Slab', serif; }
+    font-family: 'Roboto Slab', serif;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem; }
+    .container1 .article p {
+      background-color: #eee0cdb9; }
   .container1 .carousel {
     grid-area: carousel;
     padding: 5px;
@@ -145,14 +150,38 @@ h2 {
     grid-area: texto1;
     font-family: 'Roboto Slab', serif;
     font-weight: 400;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
     margin: auto;
     margin-top: 25px; }
+    .container2 .texto1 p {
+      background-color: #eee0cdb9; }
   .container2 .imagen1 {
     grid-area: imagen1;
     padding: 20px;
     align-items: center;
     text-align: center; }
     .container2 .imagen1 .img {
+      width: 700px; }
+  .container2 .texto2 {
+    grid-area: texto2;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    margin: auto;
+    margin-top: 25px; }
+    .container2 .texto2 p {
+      background-color: #eee0cdb9; }
+  .container2 .imagen2 {
+    grid-area: imagen2;
+    padding: 20px;
+    margin-bottom: 50px;
+    align-items: center;
+    text-align: center; }
+    .container2 .imagen2 .img {
       width: 700px; }
   .container2 .linea {
     grid-area: linea;
@@ -169,20 +198,6 @@ h2 {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 15px; }
-  .container2 .texto2 {
-    grid-area: texto2;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 400;
-    margin: auto;
-    margin-top: 25px; }
-  .container2 .imagen2 {
-    grid-area: imagen2;
-    padding: 20px;
-    margin-bottom: 50px;
-    align-items: center;
-    text-align: center; }
-    .container2 .imagen2 .img {
-      width: 700px; }
   .container2 .footer2 {
     grid-area: footer2;
     margin: 0; }
@@ -271,30 +286,45 @@ h2 {
   .container4 .anuncio1 {
     grid-area: anuncio1;
     font-family: 'Roboto Slab', serif;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
     font-weight: 400;
     margin: auto;
     margin-top: 25px;
     padding: 25px; }
+    .container4 .anuncio1 p {
+      background-color: #eee0cdb9; }
     .container4 .anuncio1 .comprar {
       text-align: right;
       padding: 20px; }
   .container4 .anuncio2 {
     grid-area: anuncio2;
     font-family: 'Roboto Slab', serif;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
     font-weight: 400;
     margin: auto;
     margin-top: 25px;
     padding: 25px; }
+    .container4 .anuncio2 p {
+      background-color: #eee0cdb9; }
     .container4 .anuncio2 .comprar {
       text-align: right;
       padding: 20px; }
   .container4 .anuncio3 {
     grid-area: anuncio3;
     font-family: 'Roboto Slab', serif;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
     font-weight: 400;
     margin: auto;
     margin-top: 25px;
     padding: 25px; }
+    .container4 .anuncio3 p {
+      background-color: #eee0cdb9; }
     .container4 .anuncio3 .comprar {
       text-align: right;
       padding: 20px; }
@@ -413,11 +443,14 @@ h2 {
       transform: scale(1.2, 1.2); }
   .container6 .pregunta1 {
     grid-area: pregunta1;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
     font-family: 'Roboto Slab', serif;
     margin: auto;
-    font-weight: 400;
-    margin-top: 25px;
-    padding: 25px; }
+    font-weight: 400; }
+    .container6 .pregunta1 p {
+      background-color: #eee0cdb9; }
   .container6 .foto1 {
     grid-area: foto1;
     padding: 25px;
@@ -437,17 +470,23 @@ h2 {
   .container6 .pregunta2 {
     grid-area: pregunta2;
     font-family: 'Roboto Slab', serif;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
     margin: auto;
-    font-weight: 400;
-    margin-top: 10px;
-    padding: 25px; }
+    font-weight: 400; }
+    .container6 .pregunta2 p {
+      background-color: #eee0cdb9; }
   .container6 .pregunta3 {
     grid-area: pregunta3;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
     font-family: 'Roboto Slab', serif;
     margin: auto;
-    font-weight: 400;
-    margin-top: 10px;
-    padding: 25px; }
+    font-weight: 400; }
+    .container6 .pregunta3 p {
+      background-color: #eee0cdb9; }
   .container6 .foto3 {
     grid-area: foto3;
     padding: 25px;
